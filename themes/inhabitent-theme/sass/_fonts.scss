@@ -1,3 +1,69 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../Merriweather-LightItalic.eot');
+  src: url('../Merriweather-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../Merriweather-LightItalic.woff2') format('woff2'),
+      url('../Merriweather-LightItalic.ttf') format('truetype'),
+      url('../Merriweather-LightItalic.svg#Merriweather-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../Merriweather-Light.eot');
+  src: url('../Merriweather-Light.eot?#iefix') format('embedded-opentype'),
+      url('../Merriweather-Light.woff2') format('woff2'),
+      url('../Merriweather-Light.ttf') format('truetype'),
+      url('../Merriweather-Light.svg#Merriweather-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../Merriweather-Bold.eot');
+  src: url('../Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../Merriweather-Bold.woff2') format('woff2'),
+      url('../Merriweather-Bold.ttf') format('truetype'),
+      url('../Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '.';
+  src: url('../8f0694ff230bc9b5a7856b9e1770c671.eot');
+  src: url('../8f0694ff230bc9b5a7856b9e1770c671.eot?#iefix') format('embedded-opentype'),
+      url('../8f0694ff230bc9b5a7856b9e1770c671.woff2') format('woff2'),
+      url('../8f0694ff230bc9b5a7856b9e1770c671.ttf') format('truetype'),
+      url('../8f0694ff230bc9b5a7856b9e1770c671.svg#.') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '.';
+  src: url('../2c9d395c33d6a28089c6421394a29bf8.eot');
+  src: url('../2c9d395c33d6a28089c6421394a29bf8.eot?#iefix') format('embedded-opentype'),
+      url('../2c9d395c33d6a28089c6421394a29bf8.woff2') format('woff2'),
+      url('../2c9d395c33d6a28089c6421394a29bf8.ttf') format('truetype'),
+      url('../2c9d395c33d6a28089c6421394a29bf8.svg#.') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../Merriweather-BoldItalic.eot');
+  src: url('../Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../Merriweather-BoldItalic.woff2') format('woff2'),
+      url('../Merriweather-BoldItalic.ttf') format('truetype'),
+      url('../Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
