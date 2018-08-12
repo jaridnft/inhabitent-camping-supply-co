@@ -11,8 +11,7 @@ a {
 		color: $color__link-visited;
 	}
 	&:hover,
-	&:focus,
-	&:active {
+	&:focus {
 		color: $color__link-hover;
 	}
 	&:focus {
