@@ -67,6 +67,26 @@ function red_starter_widgets_init() {
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
+/* The following changes the login logo of wp-admin */ 
+
+
+function my_login_logo_one() { 
+	?> 
+	<style type="text/css"> 
+	body.login div#login h1 a {
+		background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg); 
+		background-size: 300px 53px !important;
+		width: 320px;
+		margin: 0;
+	} 
+	#loginform {
+		margin-top: 0;
+	}
+	</style>
+	<?php 
+} 
+add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
