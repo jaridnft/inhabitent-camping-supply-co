@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+footer {
+  height: 479px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include background-2x( '../../images/dark-wood', 'png', '100%' , '470px', center center, repeat );
+}
+
+.footer-blocks {
+  display: flex;
+  width: 100%;
+  max-width: 1120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/*
+* extension for divs of footer-block-item class
+*/
+
+%footer-block-item {
+  color: white;
+  padding-right: 30px;
+  width: 280px;
+  h3 {
+    color: $color_brand_orange;
+    font-family: $font__accent;
+    text-transform: uppercase;
+  }
+}
+
+.contact {
+  @extend %footer-block-item;
+  p a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.business-hours {
+  @extend %footer-block-item;
+}
+
+.day-of-week {
+  font-weight: 700;
+}
+
+.fa, .fab {
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+
+.text-logo {
+  // margin-top: 30px;
+  width: 560px;
+  display: flex;
+  justify-content: flex-end;
+  img {
+    height: 50px;
+    margin-top: 1rem;
+  }
+}
+
+.site-info {
+  height: 35px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  a {
+    font-family: $font__accent;
+    text-decoration: none;
+    color: white;
+  }
+}

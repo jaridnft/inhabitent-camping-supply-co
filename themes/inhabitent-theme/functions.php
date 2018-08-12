@@ -67,8 +67,9 @@ function red_starter_widgets_init() {
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
-/* The following changes the login logo of wp-admin */ 
-
+/* *
+ * The following changes the login logo of wp-admin 
+ */ 
 
 function my_login_logo_one() { 
 	?> 
