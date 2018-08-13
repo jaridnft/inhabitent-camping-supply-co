@@ -863,11 +863,11 @@ footer {
 * Front-Page
 */
 .front-page-hero {
-  height: 473px;
+  height: 976px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,13 +905,13 @@ footer {
 * About-Page
 */
 .about-page-hero {
-  height: 473px;
+  height: 976px;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/about-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/about-hero.jpg);
-  background-size: 100%;
+  background-size: 125%;
   background-repeat: no-repeat;
-  background-position: right 0px bottom 0px;
+  background-position: 50% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,3 +927,15 @@ footer {
     font-family: "Novecento Sans Wide", sans-serif;
     font-size: 3rem;
     text-transform: uppercase; }
+
+.entry-content h2 {
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.entry-content p {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 20px; }

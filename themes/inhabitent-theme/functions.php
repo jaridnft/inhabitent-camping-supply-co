@@ -67,7 +67,7 @@ function inhabitent_widgets_init() {
 }
 add_action( 'widgets_init', 'inhabitent_widgets_init' );
 
-/* *
+/**
  * The following changes the login logo of wp-admin 
  */ 
 
@@ -114,6 +114,8 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
 function inhabitent_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' );
+
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'hero-header', get_template_directory_uri() . '/build/js/hero-header.min.js', array( 'jquery' ), '1.0.0', true );
@@ -137,13 +139,12 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
-* Remove "Editor" links from sub-menus  
-*/
+ * Remove "Editor" links from sub-menus  
+ */
 
 function inhabitent_remove_submenus() {
 	remove_submenu_page( 'themes.php', 'theme-editor.php' );
 	remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
-
 
