@@ -2,21 +2,18 @@
 # Sidebar
 --------------------------------------------------------------*/
 
-/* TODO: none of this is working!
-
 .widget-area {
   width: 27%;
   padding-left: 5%;
-  border-left
 }
 
 .widget-title {
   font-family: $font__accent;
+  text-transform: uppercase;
 }
 
-.widget
-  ul li a {
+.widget {
+  a {
     text-decoration: none;
   }
-
-*/
+}

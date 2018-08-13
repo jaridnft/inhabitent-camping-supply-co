@@ -843,6 +843,20 @@ footer {
     color: white; }
 
 /*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.widget-area {
+  width: 27%;
+  padding-left: 5%; }
+
+.widget-title {
+  font-family: "Novecento Sans Wide", sans-serif;
+  text-transform: uppercase; }
+
+.widget a {
+  text-decoration: none; }
+
+/*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
 /* 
