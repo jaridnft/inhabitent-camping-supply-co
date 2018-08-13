@@ -39,18 +39,18 @@
   .page_item a:active {
     color: $color_brand_green;
   }
-}
-
-.search-form {
-  input {
-    background-color: rgba(255,255,255,0);
-    border: none;
-    width: 80px;
+  .search-form {
+    input {
+      background-color: rgba(255,255,255,0);
+      border: none;
+      width: 80px;
+    }
+    .fa-search {
+      padding-top: 10px;
+      margin-left: -60px;
+      color: $color_brand_green;
+    }
   }
 }
 
-.fa-search {
-  padding-top: 10px;
-  margin-left: -60px;
-  color: $color_brand_green;
-}
+

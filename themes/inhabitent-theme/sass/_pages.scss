@@ -1,7 +1,10 @@
 /*--------------------------------------------------------------
-# Front Page
+# Pages
 --------------------------------------------------------------*/
 
+/* 
+* Front-Page
+*/
 
 .front-page-container {
   // temp starts
@@ -9,5 +12,18 @@
   background-color: grey;
   // temp ends
   margin-top: 25px;
+}
 
+/* 
+* 404
+*/
+
+.site-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.error-404 {
+  width: 73%;
+  padding-right: 5%;
 }

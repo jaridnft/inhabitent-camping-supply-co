@@ -753,16 +753,14 @@ object {
     color: #248A83; }
   .main-navigation .page_item a:active {
     color: #248A83; }
-
-.search-form input {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  width: 80px; }
-
-.fa-search {
-  padding-top: 10px;
-  margin-left: -60px;
-  color: #248A83; }
+  .main-navigation .search-form input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 80px; }
+  .main-navigation .search-form .fa-search {
+    padding-top: 10px;
+    margin-left: -60px;
+    color: #248A83; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -845,9 +843,28 @@ footer {
     color: white; }
 
 /*--------------------------------------------------------------
-# Front Page
+# Pages
 --------------------------------------------------------------*/
+/* 
+* Front-Page
+*/
 .front-page-container {
   height: 10vh;
   background-color: grey;
   margin-top: 25px; }
+
+/* 
+* 404
+*/
+.site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.error-404 {
+  width: 73%;
+  padding-right: 5%; }
