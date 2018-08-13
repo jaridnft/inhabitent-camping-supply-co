@@ -6,7 +6,7 @@
 * Front-Page
 */
 
-.front-page-container {
+.front-page-hero {
   height: 473px;
   background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/home-hero.jpg);
   background-size: cover;
@@ -35,4 +35,28 @@
     border-right: 1px solid #e1e1e1;
   }
 }
+
+/* 
+* About-Page
+*/
+
+.about-page-hero {
+  height: 473px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/about-hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0px bottom 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  h1 {
+    color: white;
+    font-family: $font__accent;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
 

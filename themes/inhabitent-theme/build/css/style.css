@@ -848,7 +848,7 @@ footer {
 /* 
 * Front-Page
 */
-.front-page-container {
+.front-page-hero {
   height: 473px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
@@ -886,3 +886,30 @@ footer {
   .site-main .error-404 {
     padding-right: 5%;
     border-right: 1px solid #e1e1e1; }
+
+/* 
+* About-Page
+*/
+.about-page-hero {
+  height: 473px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/about-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/about-hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0px bottom 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px; }
+  .about-page-hero h1 {
+    color: white;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase; }
