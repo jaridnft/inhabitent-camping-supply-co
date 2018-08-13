@@ -7,11 +7,13 @@
 */
 
 .front-page-container {
-  // temp starts
-  height: 10vh;
-  background-color: grey;
-  // temp ends
-  margin-top: 25px;
+  height: 473px;
+  background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/home-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 
