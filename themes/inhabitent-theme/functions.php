@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package inhabitent_Theme
+ * @package red_academy_Theme
  */
 
 if ( ! function_exists( 'inhabitent_setup' ) ) :
@@ -66,34 +66,6 @@ function inhabitent_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'inhabitent_widgets_init' );
-
-/**
- * The following changes the login logo of wp-admin 
- */ 
-
-function inhabitent_login_logo() {
-	echo '<style type="text/css">                                                                   
-	body.login div#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
-		background-size: 300px 53px !important;
-		width: 320px;
-		margin: 0;
-	} 
-	#loginform {
-		margin-top: 0;
-	}
-	</style>';
-}
-add_action('login_head', 'inhabitent_login_logo');
-
-/**
- * The following changes the logo url 
- */
-
-function inhabitent_login_url( $url ) {
-	// TODO: fix URL
-		return get_bloginfo( get_bloginfo( 'wpurl' ) );
-}
-add_filter( 'login_headerurl', 'inhabitent_login_url' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
