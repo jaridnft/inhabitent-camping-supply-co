@@ -361,10 +361,10 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5rem 3rem; }
+  padding: 0; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -856,15 +856,22 @@ footer {
 /* 
 * 404
 */
+.site-content {
+  margin-top: 55px; }
+
 .site-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
-
-.error-404 {
-  width: 73%;
-  padding-right: 5%; }
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .site-main .error-404 {
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }

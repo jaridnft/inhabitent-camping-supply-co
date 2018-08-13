@@ -35,11 +35,12 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
+	// margin: 0 0 $base__space-unit ($base__space-unit * 2);
+	padding: 0;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {

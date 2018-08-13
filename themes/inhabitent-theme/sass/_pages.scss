@@ -18,12 +18,19 @@
 * 404
 */
 
-.site-main {
-  display: flex;
-  flex-direction: row;
+.site-content {
+  margin-top: 55px;
 }
 
-.error-404 {
-  width: 73%;
-  padding-right: 5%;
+.site-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .error-404 {
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1;
+  }
 }
+
