@@ -847,11 +847,16 @@ footer {
 --------------------------------------------------------------*/
 .widget-area {
   width: 27%;
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-top: 60px;
+  border-left: 1px solid #e1e1e1; }
 
 .widget-title {
   font-family: "Novecento Sans Wide", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 37.5px; }
 
 .widget a {
   text-decoration: none; }
@@ -860,10 +865,11 @@ footer {
 # Pages
 --------------------------------------------------------------*/
 /* 
-* Front-Page
+* Front Page
 */
 .front-page-hero {
-  height: 976px;
+  height: 100vh;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
   background-size: cover;
@@ -879,14 +885,32 @@ footer {
           justify-content: center; }
 
 /* 
-* 404
+* 404 Page
 */
 .site-content {
   margin-top: 55px; }
 
-.site-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+/* 
+* About Page
+*/
+/** 
+ * Find Us Page
+ */
+.post-2 {
+  max-width: 760px;
+  padding-right: 8%;
+  padding-top: 60px; }
+  .post-2 h2 {
+    text-align: start;
+    text-transform: uppercase;
+    line-height: 1.25;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 2px; }
+  .post-2 p {
+    margin: 0; }
+
+.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,45 +921,49 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .site-main .error-404 {
-    padding-right: 5%;
-    border-right: 1px solid #e1e1e1; }
+  .site-content .content-area {
+    padding-bottom: 60px; }
 
-/* 
-* About-Page
-*/
-.about-page-hero {
-  height: 976px;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/about-hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/about-hero.jpg);
-  background-size: 125%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 60px; }
-  .about-page-hero h1 {
-    color: white;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 3rem;
-    text-transform: uppercase; }
-
-.entry-content h2 {
+.entry-title {
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Novecento Sans Wide", sans-serif;
-  font-size: 2.1rem;
-  text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.4rem; }
 
-.entry-content p {
-  width: 800px;
-  margin: auto;
-  padding-bottom: 30px;
-  padding-top: 20px; }
+.wpcf7-form p {
+  max-width: 760px;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .wpcf7-form p label {
+    margin-bottom: 10px;
+    font-size: 1.1rem; }
+
+.wpcf7-form .wpcf7-submit {
+  background: none #248A83;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: .9rem;
+  padding: 15px 30px 15px 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0; }
+
+.wpcf7-form-control {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  height: 49px;
+  margin-top: 10px; }
+
+.asterisk {
+  color: #d99054; }
+
+.wpcf7-textarea {
+  height: 350px; }

@@ -3,11 +3,12 @@
 --------------------------------------------------------------*/
 
 /* 
-* Front-Page
+* Front Page
 */
 
 .front-page-hero {
-  height: 976px;
+  height: 100vh;
+  width: 100%;
   background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/home-hero.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -17,7 +18,7 @@
 }
 
 /* 
-* 404
+* 404 Page
 */
 
 .site-content {
@@ -25,53 +26,136 @@
 }
 
 .site-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
   .error-404 {
-    padding-right: 5%;
-    border-right: 1px solid #e1e1e1;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    // padding-right: 5%;
+    // border-right: 1px solid #e1e1e1;
+    // max-width: 760px;
   }
 }
 
 /* 
-* About-Page
+* About Page
 */
 
 .about-page-hero {
-  height: 976px;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/about-hero.jpg);
-  background-size: 125%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
-  h1 {
-    color: white;
-    font-family: $font__accent;
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
+  // height: 976px;
+  // width: 100%;
+  // background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/about-hero.jpg);
+  // background-size: 125%;
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin-bottom: 60px;
+  // h1 {
+  //   color: white;
+  //   font-family: $font__accent;
+  //   font-size: 3rem;
+  //   text-transform: uppercase;
+  // }
 }
 
 .entry-content {
+  // h2 {
+  //   font-family: $font__accent;
+  //   font-size: 2.1rem;
+  //   text-align: center;
+  //   text-transform: uppercase;
+  //   letter-spacing: 2px;
+  //   margin-top: 0;
+  // }
+  // p {
+  //   width: 800px;
+  //   margin: auto;
+  //   padding-bottom: 30px;
+  // }
+}
+
+/** 
+ * Find Us Page
+ */
+
+.post-2 {
+  max-width: 760px;
+  padding-right: 8%;
+  padding-top: 60px;
   h2 {
+    text-align: start;
+    text-transform: uppercase;
+    line-height: 1.25;
     font-family: $font__accent;
     font-size: 2.1rem;
-    text-align: center;
-    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   p {
-    width: 800px;
-    margin: auto;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    margin: 0;
   }
+}
+
+ .site-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .content-area {
+    padding-bottom: 60px;
+  }
+}
+
+.entry-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.wpcf7-form {
+  p {
+    max-width: 760px;
+    text-transform: uppercase;
+    font-family: $font__accent;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    label {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+  }
+  .wpcf7-submit {
+    background: none $color_brand_green;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-family: $font__accent;
+    font-size: .9rem;
+    padding: 15px 30px 15px 30px;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+.wpcf7-form-control {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  height: 49px;
+  margin-top: 10px;
+}
+
+.asterisk {
+  color: $color_brand_orange;
+}
+
+.wpcf7-textarea {
+  height: 350px;
 }
 
 

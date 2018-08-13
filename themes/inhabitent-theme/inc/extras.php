@@ -45,7 +45,6 @@ add_action('login_head', 'inhabitent_login_logo');
  */
 
 function inhabitent_login_url( $url ) {
-	// TODO: fix URL
-		return get_bloginfo( get_bloginfo( 'wpurl' ) );
+		return get_bloginfo( get_bloginfo( 'url' ) );
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url' );

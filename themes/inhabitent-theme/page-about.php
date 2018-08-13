@@ -1,14 +1,15 @@
 <?php
-
-// About page structure
+/*
+* Template Name: About Page
+*
+*/
 
 get_header(); ?>
 
-  <div class="about-page-hero">
-    <h1><?php the_title() ?></h1>
-  </div>
+<div class="about-content-area">
   <?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'template-parts/content', 'about' ); ?>
+    <?php get_template_part( 'template-parts/content', 'notitle' ); ?>
   <?php endwhile; ?>
+</div>
 
 <?php get_footer(); ?>

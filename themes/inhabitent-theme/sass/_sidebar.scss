@@ -5,11 +5,16 @@
 .widget-area {
   width: 27%;
   padding-left: 5%;
+  padding-top: 60px;
+  border-left: 1px solid #e1e1e1;
 }
 
 .widget-title {
   font-family: $font__accent;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 37.5px;
 }
 
 .widget {
