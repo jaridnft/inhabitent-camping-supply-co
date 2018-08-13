@@ -747,7 +747,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   width: 50%; }
-  .main-navigation .page_item a {
+  .main-navigation .menu a {
     padding: 12.5px;
     text-transform: uppercase;
     color: #248A83; }
