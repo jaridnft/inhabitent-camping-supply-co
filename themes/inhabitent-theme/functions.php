@@ -133,3 +133,14 @@ function inhabitant_search_form( $form ) {
      return $form;
 }
 add_filter( 'get_search_form', 'inhabitant_search_form' );
+
+/** 
+ * Hook to insert a 'read more' button for blog posts
+ */
+
+function the_excerpt_more_link( $excerpt ){
+	$post = get_post();
+	$excerpt .= '<a href="'. get_permalink($post->ID) . '">Read more</a>.';
+	return $excerpt;
+}
+add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
