@@ -89,16 +89,27 @@ function inhabitent_scripts() {
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' );
 
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-
+	
 	if ( is_front_page() || is_page_template( 'page-about.php' )) {
 		wp_enqueue_script( 'hero-header', get_template_directory_uri() . '/build/js/hero-header.min.js', array( 'jquery' ), '1.0.0', true );
 	}
-
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
+/** 
+ * Hook to insert a 'read more' button for blog posts
+ */
+
+function the_excerpt_more_link( $excerpt ){
+	$post = get_post();
+	$excerpt .= '<a href="'. get_permalink($post->ID) . '">Read more &rarr;</i></a>';
+	return $excerpt;
+}
+add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
 
 /**
  * Custom template tags for this theme.
@@ -133,14 +144,3 @@ function inhabitant_search_form( $form ) {
      return $form;
 }
 add_filter( 'get_search_form', 'inhabitant_search_form' );
-
-/** 
- * Hook to insert a 'read more' button for blog posts
- */
-
-function the_excerpt_more_link( $excerpt ){
-	$post = get_post();
-	$excerpt .= '<a href="'. get_permalink($post->ID) . '">Read more</a>.';
-	return $excerpt;
-}
-add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );

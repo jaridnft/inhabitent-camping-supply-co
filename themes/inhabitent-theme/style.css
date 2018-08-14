@@ -248,7 +248,7 @@ p {
   margin-bottom: 1.5rem; }
 
 dfn, cite, em, i {
-  font-style: italic; }
+  font-style: none; }
 
 blockquote {
   margin: 0 1.5rem; }

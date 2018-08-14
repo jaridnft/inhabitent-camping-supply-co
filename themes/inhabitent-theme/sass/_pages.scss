@@ -169,11 +169,18 @@
     color: white;
     font-family: $font__accent;
     font-size: .9rem;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px;
     box-shadow: none;
     text-shadow: none;
     border: 0;
     border-radius: 0;
+  }
+  .wpcf7-submit:hover {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),$color_brand_green;
+    box-shadow: none;
   }
 }
 
@@ -186,9 +193,218 @@
 }
 
 /** 
- * Journal Page (main blog settings)
+ * Journal (main blog settings) & single page 
  */
 
+.journal-content-area, .single-content-area {
+  max-width: 760px;
+  padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  article {
+    padding-bottom: 60px;
+  }
+}
+
+
+.journal-entry-header, .single-entry-header {
+  position: relative;
+  padding-right: 0;
+  img {
+    width: 100%;
+    display: block;
+  }
+  h1, h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: $font__accent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    background-color: $color_brand_green;
+    margin-top: 45px;
+    line-height: 1.25;
+    font-size: 2rem;
+    width: 75%;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .journal-entry-meta, .single-entry-meta {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    color: white;
+    font-family: $font__accent;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    padding: 0px 30px;
+    background-color: $color_brand_green;
+    .comments-link a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.journal-entry-content {
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font__accent;
+    padding: 15px 30px;
+    border: 1px black solid;
+  }
+}
+
+.single-entry-footer {
+  text-transform: uppercase;
+  font-family: $font__accent;
+  .cat-links {
+    margin-right: 30px;
+  }
+  a {
+    color: $color_brand_green;
+    text-decoration: none;
+  }
+  .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: .9rem;
+    }
+    .fab {
+      font-size: .9rem;
+    }
+  }
+}
+
+/** 
+ * Comments
+ */
+
+ .comments-title {
+   text-transform: uppercase;
+   font-family: $font__accent;
+   font-size: 2.1rem;
+   letter-spacing: 2px;
+ }
+
+.comment-list {
+  list-style-type: none;
+  cite.fn {
+    font-style: none !important;
+    // this isn't working!
+  }
+}
+.comment-content {
+  width: 100%;
+  p, .reply {
+    margin-left: 94px;
+  }
+}
+.comment-author, .comment-metadata {
+  width: 100%;
+  time {
+    color: gray;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.comment-author-avatar {
+  float: left;
+}
+.avatar {
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.comment-reply-link {
+  text-decoration: none;
+}
+
+.comment-reply-title {
+  text-transform: uppercase;
+  font-family: $font__accent;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  border-top: 1px solid #e1e1e1;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comment-form {
+  p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    label {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 1.1rem;
+    }
+    .required {
+      color: $color_brand_orange;
+    }
+  }
+  textarea, input {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+  }
+  .comment-form-author {
+    width: 49%;
+    margin-right: 1%;
+    float: left;
+    input {
+      width: 100%;
+    }
+  }
+  .comment-form-email {
+    width: 49%;
+    margin-left: 1%;
+    float: left;
+    input {
+      width: 100%;
+    }
+  }
+  .comment-form-url {
+    input {
+      width: 100%;
+    }
+  }
+  .submit {
+    background: none $color_brand_green;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-family: $font__accent;
+    font-size: .9rem;
+    padding: 15px 30px;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    border-radius: 0;
+  }
+  .submit:hover {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),$color_brand_green;
+    box-shadow: none;
+  }
+}
 
 
 

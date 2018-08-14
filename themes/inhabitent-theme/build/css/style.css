@@ -293,7 +293,7 @@ p {
   margin-bottom: 0.5rem; }
 
 dfn, cite, em, i {
-  font-style: italic; }
+  font-style: none; }
 
 blockquote {
   margin: 0 1.5rem; }
@@ -768,7 +768,7 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer {
+#colophon {
   height: 479px;
   width: 100%;
   display: -webkit-box;
@@ -786,7 +786,7 @@ footer {
   background-position: center center;
   background-repeat: repeat; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-    footer {
+    #colophon {
       background-image: url("../../images/dark-wood@2x.png"); } }
 
 .footer-blocks {
@@ -1007,12 +1007,18 @@ footer {
   color: white;
   font-family: "Novecento Sans Wide", sans-serif;
   font-size: .9rem;
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
   border: 0;
   border-radius: 0; }
+
+.wpcf7-form .wpcf7-submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248A83;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248A83;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .wpcf7-form-control {
   color: #666;
@@ -1022,5 +1028,178 @@ footer {
   margin-top: 10px; }
 
 /** 
- * Journal Page (main blog settings)
+ * Journal (main blog settings) & single page 
  */
+.journal-content-area, .single-content-area {
+  max-width: 760px;
+  padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .journal-content-area article, .single-content-area article {
+    padding-bottom: 60px; }
+
+.journal-entry-header, .single-entry-header {
+  position: relative;
+  padding-right: 0; }
+  .journal-entry-header img, .single-entry-header img {
+    width: 100%;
+    display: block; }
+  .journal-entry-header h1, .journal-entry-header h2, .single-entry-header h1, .single-entry-header h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    background-color: #248A83;
+    margin-top: 45px;
+    line-height: 1.25;
+    font-size: 2rem;
+    width: 75%; }
+    .journal-entry-header h1 a, .journal-entry-header h2 a, .single-entry-header h1 a, .single-entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+  .journal-entry-header .journal-entry-meta, .journal-entry-header .single-entry-meta, .single-entry-header .journal-entry-meta, .single-entry-header .single-entry-meta {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    color: white;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    padding: 0px 30px;
+    background-color: #248A83; }
+    .journal-entry-header .journal-entry-meta .comments-link a, .journal-entry-header .single-entry-meta .comments-link a, .single-entry-header .journal-entry-meta .comments-link a, .single-entry-header .single-entry-meta .comments-link a {
+      color: white;
+      text-decoration: none; }
+
+.journal-entry-content p {
+  margin-bottom: 30px; }
+
+.journal-entry-content a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Novecento Sans Wide", sans-serif;
+  padding: 15px 30px;
+  border: 1px black solid; }
+
+.single-entry-footer {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif; }
+  .single-entry-footer .cat-links {
+    margin-right: 30px; }
+  .single-entry-footer a {
+    color: #248A83;
+    text-decoration: none; }
+  .single-entry-footer .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .single-entry-footer .social-buttons .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: .9rem; }
+    .single-entry-footer .social-buttons .fab {
+      font-size: .9rem; }
+
+/** 
+ * Comments
+ */
+.comments-title {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 2px; }
+
+.comment-list {
+  list-style-type: none; }
+  .comment-list cite.fn {
+    font-style: none !important; }
+
+.comment-content {
+  width: 100%; }
+  .comment-content p, .comment-content .reply {
+    margin-left: 94px; }
+
+.comment-author, .comment-metadata {
+  width: 100%; }
+  .comment-author time, .comment-metadata time {
+    color: gray; }
+  .comment-author a, .comment-metadata a {
+    text-decoration: none; }
+
+.comment-author-avatar {
+  float: left; }
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 30px; }
+
+.comment-reply-link {
+  text-decoration: none; }
+
+.comment-reply-title {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  border-top: 1px solid #e1e1e1;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.comment-form p {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .comment-form p label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 1.1rem; }
+  .comment-form p .required {
+    color: #d99054; }
+
+.comment-form textarea, .comment-form input {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  margin-top: 10px; }
+
+.comment-form .comment-form-author {
+  width: 49%;
+  margin-right: 1%;
+  float: left; }
+  .comment-form .comment-form-author input {
+    width: 100%; }
+
+.comment-form .comment-form-email {
+  width: 49%;
+  margin-left: 1%;
+  float: left; }
+  .comment-form .comment-form-email input {
+    width: 100%; }
+
+.comment-form .comment-form-url input {
+  width: 100%; }
+
+.comment-form .submit {
+  background: none #248A83;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: .9rem;
+  padding: 15px 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0; }
+
+.comment-form .submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248A83;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248A83;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
