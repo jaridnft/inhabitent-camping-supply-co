@@ -1,1 +1,3 @@
-(function($) {})(jQuery);
+(function($) {
+  // enter code here
+})(jQuery);
