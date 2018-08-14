@@ -57,6 +57,14 @@ function inhabitent_register_products() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
+		'template_lock'					=> 'all',
+		'template'							=> array(
+			array(
+				'core/paragraph', array(
+					'placeholder' => 'Add the product description here.'
+				)
+			)
+		)
 	);
 	register_post_type( 'product', $args );
 

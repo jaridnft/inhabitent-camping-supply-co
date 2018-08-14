@@ -6,6 +6,20 @@ get_header(); ?>
 
 	<div id="primary" class="product-content-area">
 		<main id="main" class="product-site-main" role="main">
+			<h1>Shop Stuff</h1>
+			<h2><?php
+				$terms = get_terms( array('taxonomy' => 'product_type') );
+				foreach ( $terms as $term ) {
+					$term_link = get_term_link( $term );
+					
+					// If there was an error, continue to the next term.
+  				if ( is_wp_error( $term_link ) ) {
+					continue;
+					}
+				echo '<a href="' . esc_url( $term_link ) . '">' . $term->name . '</a>';
+				echo ' ';
+				}?>
+			</h2>
 
 		<?php if ( have_posts() ) : ?>
 

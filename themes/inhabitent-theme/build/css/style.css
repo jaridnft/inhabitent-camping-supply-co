@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Jarid Warren
+Author URI: http://www.github.com/jaridwarren
+Description: A WordPress theme for the Inhabitent Brand.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -937,6 +937,16 @@ object {
 /* 
 * About Page
 */
+.about-content-area {
+  width: 100%; }
+  .about-content-area .hero-image-header {
+    height: 100vh; }
+  .about-content-area .entry-content {
+    margin-top: 0; }
+  .about-content-area h1 {
+    color: white;
+    font-size: 3rem; }
+
 .about-content-area h2 {
   font-family: "Novecento Sans Wide", sans-serif;
   font-size: 2.1rem;
@@ -1008,7 +1018,7 @@ object {
   text-transform: uppercase;
   color: white;
   font-family: "Novecento Sans Wide", sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 15px 30px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1032,21 +1042,28 @@ object {
 /** 
  * Journal (main blog settings) & single page 
  */
-.journal-content-area, .single-content-area {
+.journal-content-area,
+.single-content-area {
   max-width: 760px;
   padding-right: 5%;
   padding-top: 60px;
   padding-bottom: 60px; }
-  .journal-content-area article, .single-content-area article {
+  .journal-content-area article,
+  .single-content-area article {
     padding-bottom: 60px; }
 
-.journal-entry-header, .single-entry-header {
+.journal-entry-header,
+.single-entry-header {
   position: relative;
   padding-right: 0; }
-  .journal-entry-header img, .single-entry-header img {
+  .journal-entry-header img,
+  .single-entry-header img {
     width: 100%;
     display: block; }
-  .journal-entry-header h1, .journal-entry-header h2, .single-entry-header h1, .single-entry-header h2 {
+  .journal-entry-header h1,
+  .journal-entry-header h2,
+  .single-entry-header h1,
+  .single-entry-header h2 {
     color: white;
     text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
@@ -1059,10 +1076,16 @@ object {
     line-height: 1.25;
     font-size: 2rem;
     width: 75%; }
-    .journal-entry-header h1 a, .journal-entry-header h2 a, .single-entry-header h1 a, .single-entry-header h2 a {
+    .journal-entry-header h1 a,
+    .journal-entry-header h2 a,
+    .single-entry-header h1 a,
+    .single-entry-header h2 a {
       color: white;
       text-decoration: none; }
-  .journal-entry-header .journal-entry-meta, .journal-entry-header .single-entry-meta, .single-entry-header .journal-entry-meta, .single-entry-header .single-entry-meta {
+  .journal-entry-header .journal-entry-meta,
+  .journal-entry-header .single-entry-meta,
+  .single-entry-header .journal-entry-meta,
+  .single-entry-header .single-entry-meta {
     position: absolute;
     bottom: 0%;
     right: 0;
@@ -1072,7 +1095,10 @@ object {
     text-transform: lowercase;
     padding: 0px 30px;
     background-color: #248A83; }
-    .journal-entry-header .journal-entry-meta .comments-link a, .journal-entry-header .single-entry-meta .comments-link a, .single-entry-header .journal-entry-meta .comments-link a, .single-entry-header .single-entry-meta .comments-link a {
+    .journal-entry-header .journal-entry-meta .comments-link a,
+    .journal-entry-header .single-entry-meta .comments-link a,
+    .single-entry-header .journal-entry-meta .comments-link a,
+    .single-entry-header .single-entry-meta .comments-link a {
       color: white;
       text-decoration: none; }
 
@@ -1103,9 +1129,9 @@ object {
       border: 1px black solid;
       text-transform: uppercase;
       font-family: "Novecento Sans Wide", sans-serif;
-      font-size: .9rem; }
+      font-size: 0.9rem; }
     .single-entry-footer .social-buttons .fab {
-      font-size: .9rem; }
+      font-size: 0.9rem; }
 
 /** 
  * Comments
@@ -1123,14 +1149,18 @@ object {
 
 .comment-content {
   width: 100%; }
-  .comment-content p, .comment-content .reply {
+  .comment-content p,
+  .comment-content .reply {
     margin-left: 94px; }
 
-.comment-author, .comment-metadata {
+.comment-author,
+.comment-metadata {
   width: 100%; }
-  .comment-author time, .comment-metadata time {
+  .comment-author time,
+  .comment-metadata time {
     color: gray; }
-  .comment-author a, .comment-metadata a {
+  .comment-author a,
+  .comment-metadata a {
     text-decoration: none; }
 
 .comment-author-avatar {
@@ -1164,7 +1194,8 @@ object {
   .comment-form p .required {
     color: #d99054; }
 
-.comment-form textarea, .comment-form input {
+.comment-form textarea,
+.comment-form input {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   margin-top: 10px; }
@@ -1192,7 +1223,7 @@ object {
   text-transform: uppercase;
   color: white;
   font-family: "Novecento Sans Wide", sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 15px 30px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1242,7 +1273,7 @@ object {
       text-transform: uppercase;
       text-decoration: none;
       font-family: "Novecento Sans Wide", sans-serif;
-      font-size: .9rem; }
+      font-size: 0.9rem; }
     .search-content-area .search-site-main p {
       margin-bottom: 30px; }
 

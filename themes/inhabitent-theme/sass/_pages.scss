@@ -71,24 +71,19 @@
 * About Page
 */
 
-// .about-page-hero {
-// height: 976px;
-// width: 100%;
-// background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url(../../images/about-hero.jpg);
-// background-size: 125%;
-// background-repeat: no-repeat;
-// background-position: 50% 50%;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// margin-bottom: 60px;
-// h1 {
-//   color: white;
-//   font-family: $font__accent;
-//   font-size: 3rem;
-//   text-transform: uppercase;
-// }
-// }
+.about-content-area {
+  width: 100%;
+  .hero-image-header {
+    height: 100vh;
+  }
+  .entry-content {
+    margin-top: 0;
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+}
 
 .about-content-area {
   h2 {
