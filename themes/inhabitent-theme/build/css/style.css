@@ -752,6 +752,8 @@ object {
     padding: 12.5px;
     text-transform: uppercase;
     color: #248A83; }
+  .main-navigation .menu a:hover {
+    color: black; }
   .main-navigation .page_item a:active {
     color: #248A83; }
   .main-navigation .search-form input {
@@ -1243,3 +1245,21 @@ object {
       font-size: .9rem; }
     .search-content-area .search-site-main p {
       margin-bottom: 30px; }
+
+/** 
+ * Archives
+ */
+.archive-content-area {
+  width: 73%;
+  max-width: 760px;
+  margin-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .archive-content-area h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    border-bottom: 1px solid #e1e1e1; }

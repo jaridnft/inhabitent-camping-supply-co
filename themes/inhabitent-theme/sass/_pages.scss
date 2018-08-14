@@ -447,3 +447,24 @@
     }
   }
 }
+
+/** 
+ * Archives
+ */
+
+ .archive-content-area {
+  width: 73%;
+  max-width: 760px;
+  margin-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h1 {
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+ }

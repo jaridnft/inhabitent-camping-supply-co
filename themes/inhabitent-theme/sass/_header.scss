@@ -37,6 +37,9 @@
     text-transform: uppercase;
     color: $color_brand_green;
   }
+  .menu a:hover {
+    color: black;
+  }
   .page_item a:active {
     color: $color_brand_green;
   }
