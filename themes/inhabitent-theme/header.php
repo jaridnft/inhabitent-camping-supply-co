@@ -31,8 +31,8 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<form class="search-form">
-						<input type="text"></input>
 						<i class="fas fa-search" href="#"></i>
+						<input type="text"></input>
 					</form>
 				</nav><!-- #site-navigation -->
 

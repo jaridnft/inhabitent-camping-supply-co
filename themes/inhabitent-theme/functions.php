@@ -122,3 +122,14 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
+/**
+ * The following replaces the default text in the Wordpress search box
+ */
+
+function inhabitant_search_form( $form ) { 
+     $form = '<section class="search"><form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '" >
+     <input class="search-field" type="search" value="' . get_search_query() . '" name="s" id="s" placeholder="Type and hit enter..." />
+     </form></section>';
+     return $form;
+}
+add_filter( 'get_search_form', 'inhabitant_search_form' );

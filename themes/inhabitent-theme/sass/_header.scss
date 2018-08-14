@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 .site-header {
+  z-index: 999;
   width: 100%;
   height: 55px;
   padding-top: 10px;
@@ -41,13 +42,14 @@
   }
   .search-form {
     input {
+      width: 0;
+      transition: width 2s;
+      border: 0;
       background-color: rgba(255,255,255,0);
-      border: none;
-      width: 80px;
     }
     .fa-search {
       padding-top: 10px;
-      margin-left: -60px;
+      margin-left: 15px;
       color: $color_brand_green;
     }
   }

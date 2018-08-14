@@ -25,17 +25,45 @@
   margin-top: 55px;
 }
 
-.site-main {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
+.site-main-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   .error-404 {
-    // padding-top: 60px;
-    // padding-bottom: 60px;
-    // padding-right: 5%;
-    // border-right: 1px solid #e1e1e1;
-    // max-width: 760px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 5%;
+    max-width: 800px;
   }
+  h1 {
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 2.4rem;
+    line-height: 1.25;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-family: $font__accent;
+  }
+  p {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .search-submit {
+    display: none;
+  }
+  .search-field {
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    padding: 6px;
+  }
+  .search-form {
+    padding-bottom: 15px;
+  }
+}
+
+.widget_archive p {
+  padding: 0;
 }
 
 /* 
@@ -61,24 +89,23 @@
   // }
 }
 
-.entry-content {
-  // h2 {
-  //   font-family: $font__accent;
-  //   font-size: 2.1rem;
-  //   text-align: center;
-  //   text-transform: uppercase;
-  //   letter-spacing: 2px;
-  //   margin-top: 0;
-  // }
-  // p {
-  //   width: 800px;
-  //   margin: auto;
-  //   padding-bottom: 30px;
-  // }
+.about-content-area {
+  h2 {
+    font-family: $font__accent;
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
 }
 
 /** 
- * Find Us Page
+ * Find Us Page (general page.php settings)
  */
 
 .post-2 {
@@ -95,6 +122,7 @@
   }
   p {
     margin: 0;
+    max-width: 700px;
   }
 }
 
@@ -117,7 +145,6 @@
 
 .wpcf7-form {
   p {
-    max-width: 760px;
     text-transform: uppercase;
     font-family: $font__accent;
     margin-top: 20px;
@@ -126,7 +153,15 @@
       margin-bottom: 10px;
       font-size: 1.1rem;
     }
+    .asterisk {
+      color: $color_brand_orange;
+    }
+    .wpcf7-textarea {
+      height: 350px;
+      max-width: 700px;
+    }
   }
+
   .wpcf7-submit {
     background: none $color_brand_green;
     cursor: pointer;
@@ -150,13 +185,7 @@
   margin-top: 10px;
 }
 
-.asterisk {
-  color: $color_brand_orange;
-}
 
-.wpcf7-textarea {
-  height: 350px;
-}
 
 
 
