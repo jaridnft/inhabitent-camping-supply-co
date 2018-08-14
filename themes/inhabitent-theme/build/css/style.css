@@ -1203,3 +1203,43 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248A83;
   -webkit-box-shadow: none;
           box-shadow: none; }
+
+/** 
+ * Search
+ */
+.search-content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .search-content-area .search-site-main {
+    width: 73%;
+    max-width: 760px;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .search-content-area .search-site-main h1 {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 2.4rem;
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+      margin-top: 0;
+      border-bottom: 1px solid #e1e1e1; }
+    .search-content-area .search-site-main h2 a {
+      line-height: 1.25;
+      text-decoration: none;
+      color: #248A83; }
+    .search-content-area .search-site-main .search-entry-summary a {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: .9rem; }
+    .search-content-area .search-site-main p {
+      margin-bottom: 30px; }

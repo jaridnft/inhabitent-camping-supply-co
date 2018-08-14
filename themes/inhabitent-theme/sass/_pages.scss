@@ -406,5 +406,44 @@
   }
 }
 
+/** 
+ * Search
+ */
 
-
+.search-content-area {
+  display: flex;
+  flex-direction: row;
+  .search-site-main {
+    width: 73%;
+    max-width: 760px;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h1 {
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 2.4rem;
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+      margin-top: 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    h2 a {
+      line-height: 1.25;
+      text-decoration: none;
+      color: $color_brand_green;
+    }
+    .search-entry-summary a {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $font__accent;
+      font-size: .9rem;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
