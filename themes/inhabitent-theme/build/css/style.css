@@ -946,18 +946,16 @@ object {
   .about-content-area h1 {
     color: white;
     font-size: 3rem; }
-
-.about-content-area h2 {
-  font-family: "Novecento Sans Wide", sans-serif;
-  font-size: 2.1rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
-.about-content-area p {
-  width: 800px;
-  margin: auto;
-  padding-bottom: 30px; }
+  .about-content-area h2 {
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .about-content-area p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px; }
 
 /** 
  * Find Us Page (general page.php settings)
@@ -1294,3 +1292,42 @@ object {
     margin-bottom: 60px;
     margin-top: 0;
     border-bottom: 1px solid #e1e1e1; }
+
+/** 
+ * Products
+ */
+.product-site-main {
+  width: 100%; }
+  .product-site-main h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0; }
+  .product-site-main ul {
+    text-align: center;
+    padding-bottom: 40px; }
+    .product-site-main ul li {
+      display: inline; }
+    .product-site-main ul a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-weight: 200;
+      font-size: 1.2rem;
+      margin: 30px; }
+    .product-site-main ul a:visited {
+      color: #248A83; }
+    .product-site-main ul a:hover {
+      color: black; }
+
+.product-content-area {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  margin-left: 45px;
+  margin-right: 45px; }
+  .product-content-area .products-container {
+    border-top: 1px #aaa dashed;
+    padding-top: 60px;
+    width: 100%; }
