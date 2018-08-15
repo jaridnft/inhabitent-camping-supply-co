@@ -11,12 +11,30 @@ get_header(); ?>
       <img class="main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"></img>
     </div>
 
+    <h2>Shop Stuff</h2>
+    <div class="front-page-shop-container">
+      <?php
+        $terms = get_terms( array('taxonomy' => 'product_type') );
+      ?>
+
+      <?php foreach ( $terms as $term ) : setup_postdata( $term ); ?>
+      
+        <?php 
+          echo '<div class="front-page-shop-item">';
+          echo '<img src="' . get_stylesheet_directory_uri() . '/images/product-type-icons/' . $term->name . '.svg">';
+          echo '<p>' . $term->description . '</p>';
+          echo '<a href="' . get_permalink() . 'product-type/' . strtolower($term->name)  . '">' . $term->name . ' Stuff' . '</a>
+          </div>'; 
+        ?>
+
+      <?php endforeach; ?>
+    </div> <!-- end of front-page-shop-container -->
+
     <h2>Inhabitent Journal</h2>
     <div class="front-page-journal-container">
         <?php		
           $args = array(
-              'posts_per_page' => 3,
-              'order' => 'ASC'				
+              'posts_per_page' => 3			
           );
 
           $product_posts = get_posts( $args );
@@ -47,7 +65,7 @@ get_header(); ?>
           </article><!-- #post-## -->
 
         <?php endforeach; ?>
-      </div>
+      </div> <!-- end of front-page-journal-container -->
     </div>
 
 <?php get_footer(); ?>

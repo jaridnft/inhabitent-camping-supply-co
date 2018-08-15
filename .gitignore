@@ -35,3 +35,10 @@ ehthumbs.db
 error_log
 access_log
 
+plugins/inhabitent-functionality/.gitignore-e
+plugins/inhabitent-functionality/README.md-e
+plugins/inhabitent-functionality/inhabitent-functionality.php-e
+plugins/inhabitent-functionality/lib/functions/general.php-e
+plugins/inhabitent-functionality/lib/functions/post-types.php-e
+plugins/inhabitent-functionality/lib/functions/taxonomies.php-e
+plugins/inhabitent-functionality/readme.txt-e

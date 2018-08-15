@@ -28,14 +28,7 @@
     justify-content: center;
   }
   .front-page-journal-container {
-    width: 92%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: 4%;
-    margin-right: 4%;
+    @include front-page-container();
     article {
       position: relative;
       width: 30%;
@@ -84,6 +77,38 @@
         color: black;
       }
     }
+  }
+}
+.front-page-shop-container {
+  @include front-page-container();
+}
+.front-page-shop-item {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #e1e1e1;
+  border-top: 4px solid #e1e1e1;
+  padding: 15px;
+  &:hover {
+    border-color: $color_brand_orange;
+  }
+  img {
+    margin: auto;
+    height: 70px;
+    width: 70px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  a {
+    @include submit-green-button(10px);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -216,11 +241,6 @@
 
   .wpcf7-submit {
     @include submit-green-button();
-    &:hover {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        $color_brand_green;
-      box-shadow: none;
-    }
   }
 }
 
@@ -410,11 +430,6 @@
   }
   .submit {
     @include submit-green-button();
-    &:hover {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        $color_brand_green;
-      box-shadow: none;
-    }
   }
 }
 
