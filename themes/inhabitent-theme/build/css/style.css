@@ -1335,8 +1335,8 @@ object {
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-  margin-left: 45px;
-  margin-right: 45px; }
+  margin-left: 5%;
+  margin-right: 5%; }
   .product-content-area .products-grid-container {
     border-top: 1px #aaa dashed;
     padding-top: 60px;
@@ -1404,3 +1404,44 @@ object {
       font-size: 0.9rem; }
     .product-single-item .social-buttons .fab {
       font-size: 0.9rem; }
+
+/** 
+ * Taxonomy
+ */
+.tax-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  padding-top: 60px;
+  border-top: 1px #aaa dashed; }
+  .tax-grid-container .tax-thumbnail-container {
+    height: 250px; }
+    .tax-grid-container .tax-thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  .tax-grid-container .tax-entry-content {
+    padding: 15px 20px;
+    font-size: 0.9rem; }
+  .tax-grid-container .tax-grid-item {
+    border: 1px solid #e1e1e1; }
+
+.tax-site-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .tax-site-main h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 0; }
+  .tax-site-main p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 60px;
+    max-width: 800px; }

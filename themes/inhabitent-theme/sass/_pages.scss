@@ -449,8 +449,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 5%;
+  margin-right: 5%;
   .products-grid-container {
     border-top: 1px #aaa dashed;
     padding-top: 60px;
@@ -462,7 +462,6 @@
   }
   .product-grid-item {
     border: 1px solid #e1e1e1;
-    // height: 312px;
   }
   .product-thumbnail-container {
     height: 250px;
@@ -515,5 +514,52 @@
     .fab {
       font-size: 0.9rem;
     }
+  }
+}
+
+/** 
+ * Taxonomy
+ */
+
+.tax-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  padding-top: 60px;
+  border-top: 1px #aaa dashed;
+  .tax-thumbnail-container {
+    height: 250px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  .tax-entry-content {
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+  .tax-grid-item {
+    border: 1px solid #e1e1e1;
+  }
+}
+
+.tax-site-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+  h1 {
+    @include header-font(2.4rem, null);
+    text-align: center;
+    margin-top: 0;
+  }
+  p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 60px;
+    max-width: 800px;
   }
 }

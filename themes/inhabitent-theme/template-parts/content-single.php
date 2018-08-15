@@ -31,6 +31,7 @@
 	</div><!-- .entry-content -->
 	
 	<footer class="single-entry-footer">
+		<?php red_starter_entry_footer() ?>
 		<div class="social-buttons">
 			<button type="button" class="black-btn"><i class="fab fa-facebook"></i>Like</button>
 			<button type="button" class="black-btn"><i class="fab fa-twitter"></i>Tweet</button>
