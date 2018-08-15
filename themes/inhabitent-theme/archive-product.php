@@ -21,11 +21,20 @@ get_header(); ?>
 				}?>
 			</ul>
 
-		<div class="products-container">
-			<?php if ( have_posts() ) : ?>
+		<div class="products-grid-container">
+			<?php		
+				$args = array(
+						'post_type' => 'product',
+						'posts_per_page' => -1,
+						'order' => 'ASC'				
+				);
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				$the_query = new WP_Query( $args );
+			?>
+
+			<?php if ( $the_query->have_posts() ) : 
+				
+				while ( $the_query->have_posts() ) : $the_query->the_post(); ?>	
 
 					<?php
 						get_template_part( 'template-parts/content', 'product' );

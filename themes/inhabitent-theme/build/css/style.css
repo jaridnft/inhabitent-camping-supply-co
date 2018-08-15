@@ -1337,7 +1337,24 @@ object {
   width: 100%;
   margin-left: 45px;
   margin-right: 45px; }
-  .product-content-area .products-container {
+  .product-content-area .products-grid-container {
     border-top: 1px #aaa dashed;
     padding-top: 60px;
-    width: 100%; }
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
+    margin-bottom: 1.5rem; }
+  .product-content-area .product-grid-item {
+    border: 1px solid #e1e1e1; }
+  .product-content-area .product-thumbnail-container {
+    height: 250px; }
+    .product-content-area .product-thumbnail-container a img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  .product-content-area .product-entry-content {
+    padding: 15px 20px;
+    font-size: 0.9rem; }
