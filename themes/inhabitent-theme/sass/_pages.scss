@@ -6,16 +6,79 @@
 * Front Page
 */
 
-.front-page-hero {
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../../images/home-hero.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
+.front-page-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  h2 {
+    @include header-font(2.4rem, null);
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .front-page-hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url(../../images/home-hero.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .front-page-journal-container {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+    article {
+      position: relative;
+      width: 30%;
+      border: 1px solid #e1e1e1;
+    }
+    img {
+      height: 250px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  .front-page-entry-meta {
+    padding: 15px;
+    height: 230px;
+    p {
+      font-size: 0.75rem;
+      margin: 0;
+    }
+    h3 {
+      @include header-font(1.3rem, null);
+      line-height: 1.25;
+      letter-spacing: 2px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      a {
+        text-decoration: none;
+        &:visited {
+          color: $color_brand_green;
+        }
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .read-more-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.75rem;
+    a {
+      @include read-more();
+    }
+  }
 }
 
 /* 
@@ -147,11 +210,11 @@
 
   .wpcf7-submit {
     @include submit-green-button();
-  }
-  .wpcf7-submit:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      $color_brand_green;
-    box-shadow: none;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        $color_brand_green;
+      box-shadow: none;
+    }
   }
 }
 
@@ -222,10 +285,7 @@
     margin-bottom: 30px;
   }
   a {
-    @include header-font(null, null);
-    text-decoration: none;
-    padding: 15px 30px;
-    border: 1px black solid;
+    @include read-more();
   }
 }
 
@@ -344,11 +404,11 @@
   }
   .submit {
     @include submit-green-button();
-  }
-  .submit:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      $color_brand_green;
-    box-shadow: none;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        $color_brand_green;
+      box-shadow: none;
+    }
   }
 }
 
@@ -435,12 +495,12 @@
       text-decoration: none;
       font-weight: 200;
       margin: 25px;
-    }
-    a:visited {
-      color: $color_brand_green;
-    }
-    a:hover {
-      color: black;
+      &:visited {
+        color: $color_brand_green;
+      }
+      &:hover {
+        color: black;
+      }
     }
   }
 }

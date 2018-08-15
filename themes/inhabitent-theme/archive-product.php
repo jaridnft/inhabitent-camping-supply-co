@@ -34,24 +34,14 @@ get_header(); ?>
 						'order' => 'ASC'				
 				);
 
-				$the_query = new WP_Query( $args );
+				$product_posts = get_posts( $args );
 			?>
 
-			<?php if ( $the_query->have_posts() ) : 
-				
-				while ( $the_query->have_posts() ) : $the_query->the_post(); ?>	
+			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 
-					<?php
-						get_template_part( 'template-parts/content', 'product' );
-					?>
+				<?php get_template_part( 'template-parts/content', 'product' ); ?>
 
-				<?php endwhile; ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
+			<?php endforeach; ?>
 		</div>
 
 		</main><!-- #main -->

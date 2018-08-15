@@ -66,3 +66,10 @@
   border: 1px black solid;
   @include header-font(0.9rem, null);
 }
+
+@mixin read-more() {
+  @include header-font(null, null);
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 1px black solid;
+}

@@ -878,22 +878,92 @@ object {
 /* 
 * Front Page
 */
-.front-page-hero {
-  height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
+.front-page-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .front-page-container h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0; }
+  .front-page-container .front-page-hero {
+    height: 100vh;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .front-page-container .front-page-journal-container {
+    width: 92%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 4%;
+    margin-right: 4%; }
+    .front-page-container .front-page-journal-container article {
+      position: relative;
+      width: 30%;
+      border: 1px solid #e1e1e1; }
+    .front-page-container .front-page-journal-container img {
+      height: 250px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  .front-page-container .front-page-entry-meta {
+    padding: 15px;
+    height: 230px; }
+    .front-page-container .front-page-entry-meta p {
+      font-size: 0.75rem;
+      margin: 0; }
+    .front-page-container .front-page-entry-meta h3 {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 1.3rem;
+      line-height: 1.25;
+      letter-spacing: 2px;
+      margin-top: 0;
+      margin-bottom: 30px; }
+      .front-page-container .front-page-entry-meta h3 a {
+        text-decoration: none; }
+        .front-page-container .front-page-entry-meta h3 a:visited {
+          color: #248a83; }
+        .front-page-container .front-page-entry-meta h3 a:hover {
+          color: black; }
+  .front-page-container .read-more-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.75rem; }
+    .front-page-container .read-more-container a {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 1px black solid; }
 
 /* 
 * 404 Page
@@ -1029,12 +1099,11 @@ object {
   text-shadow: none;
   border: 0;
   border-radius: 0; }
-
-.wpcf7-form .wpcf7-submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  .wpcf7-form .wpcf7-submit:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .wpcf7-form-control {
   color: #666;
@@ -1234,12 +1303,11 @@ object {
   text-shadow: none;
   border: 0;
   border-radius: 0; }
-
-.comment-form .submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  .comment-form .submit:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 /** 
  * Search
@@ -1326,10 +1394,10 @@ object {
       text-decoration: none;
       font-weight: 200;
       margin: 25px; }
-    .product-site-main ul a:visited {
-      color: #248a83; }
-    .product-site-main ul a:hover {
-      color: black; }
+      .product-site-main ul a:visited {
+        color: #248a83; }
+      .product-site-main ul a:hover {
+        color: black; }
 
 .product-content-area {
   padding-top: 60px;
