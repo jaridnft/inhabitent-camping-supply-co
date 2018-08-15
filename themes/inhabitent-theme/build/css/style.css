@@ -1300,7 +1300,7 @@ object {
     border-bottom: 1px solid #e1e1e1; }
 
 /** 
- * Products
+ * Product Archive
  */
 .product-site-main {
   width: 100%; }
@@ -1349,7 +1349,7 @@ object {
     border: 1px solid #e1e1e1; }
   .product-content-area .product-thumbnail-container {
     height: 250px; }
-    .product-content-area .product-thumbnail-container a img {
+    .product-content-area .product-thumbnail-container img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
@@ -1358,3 +1358,49 @@ object {
   .product-content-area .product-entry-content {
     padding: 15px 20px;
     font-size: 0.9rem; }
+
+/** 
+ * Product Single
+ */
+.product-single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px; }
+  .product-single-item .product-single-image {
+    width: 45%; }
+  .product-single-item .product-single-content {
+    width: 45%; }
+    .product-single-item .product-single-content h1 {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      color: #d99054;
+      font-size: 2.4rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.25; }
+    .product-single-item .product-single-content .product-single-price {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 1.8rem;
+      margin-top: 0; }
+  .product-single-item .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .product-single-item .social-buttons .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem; }
+    .product-single-item .social-buttons .fab {
+      font-size: 0.9rem; }

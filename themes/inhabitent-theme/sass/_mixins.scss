@@ -59,3 +59,10 @@
   color: $color;
   font-size: $size;
 }
+
+@mixin social-button() {
+  padding: 15px 30px;
+  background-color: white;
+  border: 1px black solid;
+  @include header-font(0.9rem, null);
+}
