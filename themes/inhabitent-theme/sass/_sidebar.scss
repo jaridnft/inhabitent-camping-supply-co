@@ -22,3 +22,12 @@
     text-decoration: none;
   }
 }
+
+.widget_archive {
+  a:visited {
+    color: $color_brand_green;
+  }
+  a:hover {
+    color: black;
+  }
+}

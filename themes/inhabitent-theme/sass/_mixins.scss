@@ -1,34 +1,61 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
 * HIGH PPI DISPLAY BACKGROUNDS
 */
 
-@mixin background-2x($path, $ext: "png", $w: auto, $h: auto, $pos: left top, $repeat: no-repeat) {
+@mixin background-2x(
+  $path,
+  $ext: 'png',
+  $w: auto,
+  $h: auto,
+  $pos: left top,
+  $repeat: no-repeat
+) {
+  $at1x_path: '#{$path}.#{$ext}';
+  $at2x_path: '#{$path}@2x.#{$ext}';
 
-  $at1x_path: "#{$path}.#{$ext}";
-  $at2x_path: "#{$path}@2x.#{$ext}";
- 
-  background-image: url("#{$at1x_path}");
+  background-image: url('#{$at1x_path}');
   background-size: $w $h;
   background-position: $pos;
   background-repeat: $repeat;
- 
-  @media all and (-webkit-min-device-pixel-ratio : 1.5),
-  all and (-o-min-device-pixel-ratio: 3/2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-    background-image: url("#{$at2x_path}"); 
+
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3/2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('#{$at2x_path}');
   }
+}
+
+@mixin submit-green-button() {
+  background: none $color_brand_green;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  font-family: $font__accent;
+  font-size: 0.9rem;
+  padding: 15px 30px;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+}
+
+@mixin header-font($size: 'inherit', $color: 'inherit') {
+  text-transform: uppercase;
+  font-family: $font__accent;
+  color: $color;
+  font-size: $size;
 }

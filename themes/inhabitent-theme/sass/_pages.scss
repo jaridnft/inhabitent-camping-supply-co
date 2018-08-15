@@ -37,14 +37,11 @@
     max-width: 800px;
   }
   h1 {
-    text-transform: uppercase;
-    font-family: $font__accent;
-    font-size: 2.4rem;
+    @include header-font(2.4rem, null);
     line-height: 1.25;
   }
   h2 {
-    text-transform: uppercase;
-    font-family: $font__accent;
+    @include header-font(null, null);
   }
   p {
     padding-bottom: 30px;
@@ -84,10 +81,8 @@
     font-size: 3rem;
   }
   h2 {
-    font-family: $font__accent;
-    font-size: 2.1rem;
+    @include header-font(2.1rem, null);
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
   }
   p {
@@ -106,11 +101,9 @@
   padding-right: 8%;
   padding-top: 60px;
   h2 {
+    @include header-font(2.1rem, null);
     text-align: start;
-    text-transform: uppercase;
     line-height: 1.25;
-    font-family: $font__accent;
-    font-size: 2.1rem;
     letter-spacing: 2px;
   }
   p {
@@ -129,17 +122,14 @@
 }
 
 .entry-title {
+  @include header-font(2.4rem, null);
   margin: 0;
   margin-bottom: 10px;
-  font-family: $font__accent;
-  text-transform: uppercase;
-  font-size: 2.4rem;
 }
 
 .wpcf7-form {
   p {
-    text-transform: uppercase;
-    font-family: $font__accent;
+    @include header-font(null, null);
     margin-top: 20px;
     margin-bottom: 30px;
     label {
@@ -156,17 +146,7 @@
   }
 
   .wpcf7-submit {
-    background: none $color_brand_green;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: white;
-    font-family: $font__accent;
-    font-size: 0.9rem;
-    padding: 15px 30px;
-    box-shadow: none;
-    text-shadow: none;
-    border: 0;
-    border-radius: 0;
+    @include submit-green-button();
   }
   .wpcf7-submit:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -208,9 +188,7 @@
   }
   h1,
   h2 {
-    color: white;
-    text-transform: uppercase;
-    font-family: $font__accent;
+    @include header-font(2rem, white);
     position: absolute;
     top: 0;
     left: 0;
@@ -218,7 +196,6 @@
     background-color: $color_brand_green;
     margin-top: 45px;
     line-height: 1.25;
-    font-size: 2rem;
     width: 75%;
     a {
       color: white;
@@ -227,13 +204,10 @@
   }
   .journal-entry-meta,
   .single-entry-meta {
+    @include header-font(1.2rem, white);
     position: absolute;
     bottom: 0%;
     right: 0;
-    color: white;
-    font-family: $font__accent;
-    font-size: 1.2rem;
-    text-transform: lowercase;
     padding: 0px 30px;
     background-color: $color_brand_green;
     .comments-link a {
@@ -248,17 +222,15 @@
     margin-bottom: 30px;
   }
   a {
-    text-transform: uppercase;
+    @include header-font(null, null);
     text-decoration: none;
-    font-family: $font__accent;
     padding: 15px 30px;
     border: 1px black solid;
   }
 }
 
 .single-entry-footer {
-  text-transform: uppercase;
-  font-family: $font__accent;
+  @include header-font(null, null);
   .cat-links {
     margin-right: 30px;
   }
@@ -273,9 +245,7 @@
       padding: 15px 30px;
       background-color: white;
       border: 1px black solid;
-      text-transform: uppercase;
-      font-family: $font__accent;
-      font-size: 0.9rem;
+      @include header-font(0.9rem, null);
     }
     .fab {
       font-size: 0.9rem;
@@ -288,9 +258,7 @@
  */
 
 .comments-title {
-  text-transform: uppercase;
-  font-family: $font__accent;
-  font-size: 2.1rem;
+  @include header-font(2.1rem, null);
   letter-spacing: 2px;
 }
 
@@ -330,9 +298,7 @@
 }
 
 .comment-reply-title {
-  text-transform: uppercase;
-  font-family: $font__accent;
-  font-size: 1.8rem;
+  @include header-font(1.8rem, null);
   letter-spacing: 2px;
   border-top: 1px solid #e1e1e1;
   margin: 0;
@@ -346,9 +312,7 @@
     margin-bottom: 30px;
     label {
       margin-bottom: 10px;
-      text-transform: uppercase;
-      font-family: $font__accent;
-      font-size: 1.1rem;
+      @include header-font(1.1rem, null);
     }
     .required {
       color: $color_brand_orange;
@@ -382,17 +346,7 @@
     }
   }
   .submit {
-    background: none $color_brand_green;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: white;
-    font-family: $font__accent;
-    font-size: 0.9rem;
-    padding: 15px 30px;
-    box-shadow: none;
-    text-shadow: none;
-    border: 0;
-    border-radius: 0;
+    @include submit-green-button();
   }
   .submit:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -415,9 +369,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     h1 {
-      text-transform: uppercase;
-      font-family: $font__accent;
-      font-size: 2.4rem;
+      @include header-font(2.4rem, null);
       padding-bottom: 20px;
       margin-bottom: 60px;
       margin-top: 0;
@@ -429,13 +381,11 @@
       color: $color_brand_green;
     }
     .search-entry-summary a {
+      @include header-font(0.9rem, null);
       padding: 15px 30px;
       background-color: white;
       border: 1px black solid;
-      text-transform: uppercase;
       text-decoration: none;
-      font-family: $font__accent;
-      font-size: 0.9rem;
     }
     p {
       margin-bottom: 30px;
@@ -454,9 +404,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   h1 {
-    text-transform: uppercase;
-    font-family: $font__accent;
-    font-size: 2.4rem;
+    @include header-font(2.4rem, null);
     padding-bottom: 20px;
     margin-bottom: 60px;
     margin-top: 0;
@@ -471,25 +419,25 @@
 .product-site-main {
   width: 100%;
   h1 {
-    text-transform: uppercase;
-    font-family: $font__accent;
+    @include header-font(2.4rem, null);
     text-align: center;
-    font-size: 2.4rem;
     margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    line-height: 1.25;
   }
   ul {
     text-align: center;
     padding-bottom: 40px;
+    margin-top: 30px;
     li {
       display: inline;
     }
     a {
+      @include header-font(1.2rem, null);
       text-decoration: none;
-      text-transform: uppercase;
-      font-family: $font__accent;
       font-weight: 200;
-      font-size: 1.2rem;
-      margin: 30px;
+      margin: 25px;
     }
     a:visited {
       color: $color_brand_green;

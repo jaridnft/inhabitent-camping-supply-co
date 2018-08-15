@@ -462,7 +462,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83; }
+  color: #248a83; }
   a:visited {
     color: black; }
   a:hover, a:focus {
@@ -751,11 +751,11 @@ object {
   .main-navigation .menu a {
     padding: 12.5px;
     text-transform: uppercase;
-    color: #248A83; }
+    color: #248a83; }
   .main-navigation .menu a:hover {
     color: black; }
   .main-navigation .page_item a:active {
-    color: #248A83; }
+    color: #248a83; }
   .main-navigation .search-form input {
     width: 0;
     -webkit-transition: width 2s;
@@ -765,7 +765,7 @@ object {
   .main-navigation .search-form .fa-search {
     padding-top: 10px;
     margin-left: 15px;
-    color: #248A83; }
+    color: #248a83; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -866,6 +866,12 @@ object {
 .widget a {
   text-decoration: none; }
 
+.widget_archive a:visited {
+  color: #248a83; }
+
+.widget_archive a:hover {
+  color: black; }
+
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
@@ -947,10 +953,10 @@ object {
     color: white;
     font-size: 3rem; }
   .about-content-area h2 {
+    text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
     font-size: 2.1rem;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px; }
   .about-content-area p {
     width: 800px;
@@ -965,11 +971,11 @@ object {
   padding-right: 8%;
   padding-top: 60px; }
   .post-2 h2 {
-    text-align: start;
     text-transform: uppercase;
-    line-height: 1.25;
     font-family: "Novecento Sans Wide", sans-serif;
     font-size: 2.1rem;
+    text-align: start;
+    line-height: 1.25;
     letter-spacing: 2px; }
   .post-2 p {
     margin: 0;
@@ -990,11 +996,11 @@ object {
     padding-bottom: 60px; }
 
 .entry-title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-family: "Novecento Sans Wide", sans-serif;
   text-transform: uppercase;
-  font-size: 2.4rem; }
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 2.4rem;
+  margin: 0;
+  margin-bottom: 10px; }
 
 .wpcf7-form p {
   text-transform: uppercase;
@@ -1011,7 +1017,7 @@ object {
     max-width: 700px; }
 
 .wpcf7-form .wpcf7-submit {
-  background: none #248A83;
+  background: none #248a83;
   cursor: pointer;
   text-transform: uppercase;
   color: white;
@@ -1025,8 +1031,8 @@ object {
   border-radius: 0; }
 
 .wpcf7-form .wpcf7-submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248A83;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248A83;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
   -webkit-box-shadow: none;
           box-shadow: none; }
 
@@ -1062,17 +1068,17 @@ object {
   .journal-entry-header h2,
   .single-entry-header h1,
   .single-entry-header h2 {
-    color: white;
     text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
+    color: white;
+    font-size: 2rem;
     position: absolute;
     top: 0;
     left: 0;
     padding: 15px 30px;
-    background-color: #248A83;
+    background-color: #248a83;
     margin-top: 45px;
     line-height: 1.25;
-    font-size: 2rem;
     width: 75%; }
     .journal-entry-header h1 a,
     .journal-entry-header h2 a,
@@ -1084,15 +1090,15 @@ object {
   .journal-entry-header .single-entry-meta,
   .single-entry-header .journal-entry-meta,
   .single-entry-header .single-entry-meta {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    color: white;
+    font-size: 1.2rem;
     position: absolute;
     bottom: 0%;
     right: 0;
-    color: white;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 1.2rem;
-    text-transform: lowercase;
     padding: 0px 30px;
-    background-color: #248A83; }
+    background-color: #248a83; }
     .journal-entry-header .journal-entry-meta .comments-link a,
     .journal-entry-header .single-entry-meta .comments-link a,
     .single-entry-header .journal-entry-meta .comments-link a,
@@ -1105,8 +1111,8 @@ object {
 
 .journal-entry-content a {
   text-transform: uppercase;
-  text-decoration: none;
   font-family: "Novecento Sans Wide", sans-serif;
+  text-decoration: none;
   padding: 15px 30px;
   border: 1px black solid; }
 
@@ -1116,7 +1122,7 @@ object {
   .single-entry-footer .cat-links {
     margin-right: 30px; }
   .single-entry-footer a {
-    color: #248A83;
+    color: #248a83;
     text-decoration: none; }
   .single-entry-footer .social-buttons {
     margin-top: 30px;
@@ -1216,7 +1222,7 @@ object {
   width: 100%; }
 
 .comment-form .submit {
-  background: none #248A83;
+  background: none #248a83;
   cursor: pointer;
   text-transform: uppercase;
   color: white;
@@ -1230,8 +1236,8 @@ object {
   border-radius: 0; }
 
 .comment-form .submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248A83;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248A83;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
   -webkit-box-shadow: none;
           box-shadow: none; }
 
@@ -1263,15 +1269,15 @@ object {
     .search-content-area .search-site-main h2 a {
       line-height: 1.25;
       text-decoration: none;
-      color: #248A83; }
+      color: #248a83; }
     .search-content-area .search-site-main .search-entry-summary a {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem;
       padding: 15px 30px;
       background-color: white;
       border: 1px black solid;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 0.9rem; }
+      text-decoration: none; }
     .search-content-area .search-site-main p {
       margin-bottom: 30px; }
 
@@ -1301,23 +1307,27 @@ object {
   .product-site-main h1 {
     text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
-    text-align: center;
     font-size: 2.4rem;
-    margin: 0; }
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    line-height: 1.25; }
   .product-site-main ul {
     text-align: center;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    margin-top: 30px; }
     .product-site-main ul li {
       display: inline; }
     .product-site-main ul a {
-      text-decoration: none;
       text-transform: uppercase;
       font-family: "Novecento Sans Wide", sans-serif;
-      font-weight: 200;
       font-size: 1.2rem;
-      margin: 30px; }
+      text-decoration: none;
+      font-weight: 200;
+      margin: 25px; }
     .product-site-main ul a:visited {
-      color: #248A83; }
+      color: #248a83; }
     .product-site-main ul a:hover {
       color: black; }
 
