@@ -2,6 +2,7 @@
 /*
 * Template Name: About Page
 *
+* @package Inhabitent_Theme
 */
 
 get_header(); ?>

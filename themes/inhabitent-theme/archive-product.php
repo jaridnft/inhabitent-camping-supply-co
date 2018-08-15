@@ -1,6 +1,11 @@
 <?php
+/**
+ * The template for displaying product list (shop tab).
+ *
+ * @package Inhabitent_Theme
+ */
 
-// product (custom post) list page structure
+
 
 get_header(); ?>
 

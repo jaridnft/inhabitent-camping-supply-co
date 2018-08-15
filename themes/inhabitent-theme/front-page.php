@@ -1,6 +1,9 @@
 <?php
-
-// Front/landing page structure
+/**
+ * The template for displaying the front-page.
+ *
+ * @package Inhabitent_Theme
+ */
 
 get_header(); ?>
 

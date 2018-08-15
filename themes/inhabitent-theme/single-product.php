@@ -1,6 +1,9 @@
 <?php
-
-// Custom post type (products) structure
+/**
+ * The template for displaying single product pages.
+ *
+ * @package Inhabitent_Theme
+ */
 
 get_header(); ?>
 
