@@ -77,6 +77,12 @@
     left: 0.75rem;
     a {
       @include read-more();
+      &:visited {
+        color: $color_brand_green;
+      }
+      &:hover {
+        color: black;
+      }
     }
   }
 }

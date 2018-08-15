@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php inhabitent_numbered_pagination(); ?>
 
 		<?php else : ?>
 

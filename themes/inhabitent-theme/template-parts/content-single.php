@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="single-entry-title">', '</h1>' ); ?>
 
 		<div class="single-entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -31,7 +31,7 @@
 	</div><!-- .entry-content -->
 	
 	<footer class="single-entry-footer">
-		<?php red_starter_entry_footer() ?>
+		<?php inhabitent_entry_footer() ?>
 		<div class="social-buttons">
 			<button type="button" class="black-btn"><i class="fab fa-facebook"></i>Like</button>
 			<button type="button" class="black-btn"><i class="fab fa-twitter"></i>Tweet</button>

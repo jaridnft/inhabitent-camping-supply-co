@@ -32,11 +32,10 @@ get_header(); ?>
 
               <?php endif; ?>
 
-
               <?php if ( 'post' === get_post_type() ) : ?>
               
               <div class="front-page-entry-meta">
-                <p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
+                <p><?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
                 <?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
                 </div><!-- .entry-meta -->
                 <?php 

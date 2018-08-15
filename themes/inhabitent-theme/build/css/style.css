@@ -964,6 +964,10 @@ object {
       text-decoration: none;
       padding: 15px 30px;
       border: 1px black solid; }
+      .front-page-container .read-more-container a:visited {
+        color: #248a83; }
+      .front-page-container .read-more-container a:hover {
+        color: black; }
 
 /* 
 * 404 Page
