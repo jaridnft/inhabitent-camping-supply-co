@@ -335,7 +335,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  min-width: 1190px; }
 
 *,
 *:before,
@@ -349,10 +350,13 @@ body {
   /* Fallback for when there is no custom background color defined. */
   line-height: 1.75; }
 
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+blockquote,
+q {
+  quotes: '' ''; }
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
+    content: ''; }
 
 hr {
   background-color: #ccc;
@@ -360,7 +364,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
+ul,
+ol {
   padding: 0; }
 
 ul {
@@ -724,6 +729,10 @@ object {
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1; }
+  .site-header.top {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0;
+    position: absolute; }
 
 .site-branding {
   display: -webkit-box;
@@ -733,9 +742,12 @@ object {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 10%; }
-  .site-branding img {
-    width: 50px;
-    height: 32px; }
+  .site-branding .img-div {
+    background-image: url(../../images/logos/inhabitent-logo-tent.svg);
+    background-size: cover;
+    padding: 16px 25px; }
+    .site-branding .img-div.top {
+      background-image: url(../../images/logos/inhabitent-logo-tent-white.svg); }
 
 .main-navigation {
   display: -webkit-box;
@@ -752,8 +764,12 @@ object {
     padding: 12.5px;
     text-transform: uppercase;
     color: #248a83; }
-  .main-navigation .menu a:hover {
-    color: black; }
+    .main-navigation .menu a:hover {
+      color: black; }
+  .main-navigation .menu a.top {
+    color: white; }
+    .main-navigation .menu a.top:hover {
+      color: #f0e4d1; }
   .main-navigation .page_item a:active {
     color: #248a83; }
   .main-navigation .search-form input {
@@ -762,10 +778,16 @@ object {
     transition: width 2s;
     border: 0;
     background-color: rgba(255, 255, 255, 0); }
-  .main-navigation .search-form .fa-search {
+  .main-navigation .search-form .fas.fa-search {
     padding-top: 10px;
     margin-left: 15px;
     color: #248a83; }
+    .main-navigation .search-form .fas.fa-search:hover {
+      color: black; }
+    .main-navigation .search-form .fas.fa-search.top {
+      color: white; }
+    .main-navigation .search-form .fas.fa-search.top:hover {
+      color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -924,10 +946,15 @@ object {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: 4%;
-    margin-right: 4%; }
+    margin-right: 4%;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .front-page-container .front-page-journal-container article {
       position: relative;
-      width: 30%;
+      margin: 1%;
+      width: 365px;
       border: 1px solid #e1e1e1; }
     .front-page-container .front-page-journal-container img {
       height: 250px;
@@ -983,10 +1010,14 @@ object {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: 4%;
-  margin-right: 4%; }
+  margin-right: 4%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .front-page-shop-item {
-  width: 24%;
+  width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,12 +1025,12 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #e1e1e1;
   border-top: 4px solid #e1e1e1;
-  padding: 15px; }
+  padding: 1%;
+  margin: 1%; }
   .front-page-shop-item:hover {
     border-color: #d99054; }
   .front-page-shop-item img {
@@ -1038,6 +1069,8 @@ object {
 */
 .site-content {
   margin-top: 55px; }
+  .site-content.top {
+    margin-top: 0; }
 
 .site-main-404 {
   display: -webkit-box;

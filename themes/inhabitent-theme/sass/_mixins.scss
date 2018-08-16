@@ -89,3 +89,12 @@
   margin-left: 4%;
   margin-right: 4%;
 }
+
+@mixin hyperlinks() {
+  &:visited {
+    color: $color_brand_green;
+  }
+  &:hover {
+    color: black;
+  }
+}

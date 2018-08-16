@@ -7,7 +7,7 @@
 
 get_header(); ?>
   <div class="front-page-container">
-    <div class="front-page-hero">
+    <div class="front-page-hero hero-image-header">
       <img class="main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"></img>
     </div>
 
@@ -23,7 +23,7 @@ get_header(); ?>
           echo '<div class="front-page-shop-item">';
           echo '<img src="' . get_stylesheet_directory_uri() . '/images/product-type-icons/' . $term->name . '.svg">';
           echo '<p>' . $term->description . '</p>';
-          echo '<a href="' . get_permalink() . 'product-type/' . strtolower($term->name)  . '">' . $term->name . ' Stuff' . '</a>
+          echo '<a href="' . get_term_link($term) . '">' . $term->name . ' Stuff' . '</a>
           </div>'; 
         ?>
 

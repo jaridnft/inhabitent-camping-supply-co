@@ -13,17 +13,26 @@
   font-family: $font__accent;
   position: fixed;
   top: 0;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
+  &.top {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0;
+    position: absolute;
+  }
 }
 
 .site-branding {
   display: flex;
   justify-content: flex-start;
   width: 10%;
-  img {
-    width: 50px;
-    height: 32px;
+  .img-div {
+    background-image: url(../../images/logos/inhabitent-logo-tent.svg);
+    background-size: cover;
+    padding: 16px 25px;
+    &.top {
+      background-image: url(../../images/logos/inhabitent-logo-tent-white.svg);
+    }
   }
 }
 
@@ -36,9 +45,15 @@
     padding: 12.5px;
     text-transform: uppercase;
     color: $color_brand_green;
+    &:hover {
+      color: black;
+    }
   }
-  .menu a:hover {
-    color: black;
+  .menu a.top {
+    color: white;
+    &:hover {
+      color: $color_brand_yellow;
+    }
   }
   .page_item a:active {
     color: $color_brand_green;
@@ -48,14 +63,21 @@
       width: 0;
       transition: width 2s;
       border: 0;
-      background-color: rgba(255,255,255,0);
+      background-color: rgba(255, 255, 255, 0);
     }
-    .fa-search {
+    .fas.fa-search {
       padding-top: 10px;
       margin-left: 15px;
       color: $color_brand_green;
+      &:hover {
+        color: black;
+      }
+      &.top {
+        color: white;
+      }
+      &.top:hover {
+        color: $color_brand_yellow;
+      }
     }
   }
 }
-
-

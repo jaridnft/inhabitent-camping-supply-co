@@ -29,9 +29,12 @@
   }
   .front-page-journal-container {
     @include front-page-container();
+    display: flex;
+    justify-content: center;
     article {
       position: relative;
-      width: 30%;
+      margin: 1%;
+      width: 365px;
       border: 1px solid #e1e1e1;
     }
     img {
@@ -55,12 +58,7 @@
       margin-bottom: 30px;
       a {
         text-decoration: none;
-        &:visited {
-          color: $color_brand_green;
-        }
-        &:hover {
-          color: black;
-        }
+        @include hyperlinks();
       }
     }
   }
@@ -70,26 +68,24 @@
     left: 0.75rem;
     a {
       @include read-more();
-      &:visited {
-        color: $color_brand_green;
-      }
-      &:hover {
-        color: black;
-      }
+      @include hyperlinks();
     }
   }
 }
 .front-page-shop-container {
   @include front-page-container();
+  display: flex;
+  justify-content: center;
 }
 .front-page-shop-item {
-  width: 24%;
+  width: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  box-sizing: border-box;
   border: 1px solid #e1e1e1;
   border-top: 4px solid #e1e1e1;
-  padding: 15px;
+  padding: 1%;
+  margin: 1%;
   &:hover {
     border-color: $color_brand_orange;
   }
@@ -118,6 +114,9 @@
 
 .site-content {
   margin-top: 55px;
+  &.top {
+    margin-top: 0;
+  }
 }
 
 .site-main-404 {
@@ -516,12 +515,7 @@
       text-decoration: none;
       font-weight: 200;
       margin: 25px;
-      &:visited {
-        color: $color_brand_green;
-      }
-      &:hover {
-        color: black;
-      }
+      @include hyperlinks();
     }
   }
 }
