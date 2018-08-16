@@ -55,10 +55,10 @@ get_header(); ?>
               <div class="front-page-entry-meta">
                 <p><?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
                 <?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-                </div><!-- .entry-meta -->
-                <?php 
+              </div><!-- .entry-meta -->
+              <?php 
                   echo '<div class="read-more-container"><a href="'. esc_url( get_permalink() ) . '">Read more &rarr;</i></a></div>';
-                ?>
+              ?>
 
               <?php endif; ?>
 

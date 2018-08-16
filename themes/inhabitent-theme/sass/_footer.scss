@@ -8,7 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include background-2x( '../../images/dark-wood', 'png', '100%' , '470px', center center, repeat );
+  @include background-2x(
+    '../../images/dark-wood',
+    'png',
+    '100%',
+    '470px',
+    center center,
+    repeat
+  );
 }
 
 .footer-blocks {
@@ -39,6 +46,9 @@
   p a {
     color: white;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -50,7 +60,8 @@
   font-weight: 700;
 }
 
-.fa, .fab {
+.fa,
+.fab {
   margin-right: 10px;
   font-size: 1.25rem;
 }

@@ -1,9 +1,5 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   Business Hours Widget

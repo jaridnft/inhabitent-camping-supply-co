@@ -40,7 +40,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
+  width: 70%;
   .menu a {
     padding: 12.5px;
     text-transform: uppercase;
@@ -69,9 +69,11 @@
       }
       &:focus {
         outline: 0;
+        color: $color_brand_green;
       }
       &.top:focus {
         caret-color: $color_brand_yellow;
+        color: white;
       }
     }
   }
