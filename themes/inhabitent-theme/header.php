@@ -30,10 +30,8 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<form class="search-form">
-						<i class="fas fa-search" href="#"></i>
-						<input type="text"></input>
-					</form>
+					<i class="fas fa-search"></i>
+					<?php get_search_form(); ?>
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->

@@ -773,20 +773,31 @@ object {
   .main-navigation .page_item a:active {
     color: #248a83; }
   .main-navigation .search-form input {
-    width: 0;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-    border: 0;
-    background-color: rgba(255, 255, 255, 0); }
-  .main-navigation .search-form .fas.fa-search {
-    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif; }
+    .main-navigation .search-form input.top::-webkit-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .search-form input.top:-ms-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .search-form input.top::-ms-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .search-form input.top::placeholder {
+      color: #f0e4d1; }
+    .main-navigation .search-form input:focus {
+      outline: 0; }
+    .main-navigation .search-form input.top:focus {
+      caret-color: #f0e4d1; }
+  .main-navigation .fas.fa-search {
     margin-left: 15px;
     color: #248a83; }
-    .main-navigation .search-form .fas.fa-search:hover {
+    .main-navigation .fas.fa-search:hover {
       color: black; }
-    .main-navigation .search-form .fas.fa-search.top {
+    .main-navigation .fas.fa-search.top {
       color: white; }
-    .main-navigation .search-form .fas.fa-search.top:hover {
+    .main-navigation .fas.fa-search.top:hover {
       color: #f0e4d1; }
 
 /*--------------------------------------------------------------
@@ -873,8 +884,9 @@ object {
 # Sidebar
 --------------------------------------------------------------*/
 .widget-area {
-  width: 27%;
-  padding-left: 5%;
+  width: 25%;
+  max-width: 300px;
+  padding-left: 4%;
   padding-top: 60px;
   border-left: 1px solid #e1e1e1; }
 
@@ -1141,6 +1153,8 @@ object {
   max-width: 760px;
   padding-right: 8%;
   padding-top: 60px; }
+  .post-2 h1 {
+    letter-spacing: 2px; }
   .post-2 h2 {
     text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
@@ -1422,7 +1436,7 @@ object {
       -ms-flex-direction: row;
           flex-direction: row; }
   .search-content-area .search-site-main {
-    width: 73%;
+    width: 75%;
     max-width: 760px;
     margin-right: 5%;
     padding-top: 60px;
@@ -1454,7 +1468,7 @@ object {
  * Archives
  */
 .archive-content-area {
-  width: 73%;
+  width: 75%;
   max-width: 760px;
   margin-right: 5%;
   padding-top: 60px;

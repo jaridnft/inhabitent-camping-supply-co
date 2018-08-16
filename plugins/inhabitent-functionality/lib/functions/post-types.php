@@ -57,7 +57,7 @@ function inhabitent_register_products() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
-		'template_lock'					=> 'all',
+		// 'template_lock'					=> 'all',
 		'template'							=> array(
 			array(
 				'core/paragraph', array(

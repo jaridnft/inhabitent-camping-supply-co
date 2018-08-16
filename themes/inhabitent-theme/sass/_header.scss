@@ -60,24 +60,32 @@
   }
   .search-form {
     input {
-      width: 0;
-      transition: width 2s;
-      border: 0;
       background-color: rgba(255, 255, 255, 0);
-    }
-    .fas.fa-search {
-      padding-top: 10px;
+      border: none;
       margin-left: 15px;
-      color: $color_brand_green;
-      &:hover {
-        color: black;
-      }
-      &.top {
-        color: white;
-      }
-      &.top:hover {
+      @include header-font(null, null);
+      &.top::placeholder {
         color: $color_brand_yellow;
       }
+      &:focus {
+        outline: 0;
+      }
+      &.top:focus {
+        caret-color: $color_brand_yellow;
+      }
+    }
+  }
+  .fas.fa-search {
+    margin-left: 15px;
+    color: $color_brand_green;
+    &:hover {
+      color: black;
+    }
+    &.top {
+      color: white;
+    }
+    &.top:hover {
+      color: $color_brand_yellow;
     }
   }
 }
