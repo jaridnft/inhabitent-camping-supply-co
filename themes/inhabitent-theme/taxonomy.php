@@ -12,7 +12,7 @@ get_header(); ?>
 
       <header class="tax-page-header">
         <h1><?php single_term_title(); ?></h1>
-        <?php echo term_description( $term_id, $taxonomy ) ?>
+        <?php echo term_description( null, $taxonomy ) ?>
       </header><!-- .page-header -->
       
       <div class="tax-grid-container">
