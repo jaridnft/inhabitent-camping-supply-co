@@ -1027,19 +1027,19 @@ object {
           color: #248a83; }
         .front-page-container .front-page-entry-meta h3 a:hover {
           color: black; }
-  .front-page-container .read-more-container {
+  .front-page-container .journal-read-more-container {
     position: absolute;
     bottom: 1rem;
     left: 0.75rem; }
-    .front-page-container .read-more-container a {
+    .front-page-container .journal-read-more-container a {
       text-transform: uppercase;
       font-family: "Novecento Sans Wide", sans-serif;
       text-decoration: none;
       padding: 15px 30px;
       border: 1px black solid; }
-      .front-page-container .read-more-container a:visited {
+      .front-page-container .journal-read-more-container a:visited {
         color: #248a83; }
-      .front-page-container .read-more-container a:hover {
+      .front-page-container .journal-read-more-container a:hover {
         color: black; }
 
 .front-page-shop-container {
