@@ -6,7 +6,7 @@
 
 This was my first attempt at building a completely custom WordPress theme. This site takes advantage of WordPress' built-in back-end capibilities to make a completely dynamic site using PHP and the WordPress template hierarchy.
 
-!(/themes/inhabitent-theme/screenshot.png)
+![alt-text](/themes/inhabitent-theme/screenshot.png 'Inhabitent Theme Preview')
 
 ## Technology
 
