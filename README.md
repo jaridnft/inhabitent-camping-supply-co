@@ -29,3 +29,4 @@ This was my first attempt at building a completely custom WordPress theme. This 
 * Add 'Adventures' archive page (single page for 'Adventures' is already completed)
 * Widget-ize footer
 * Validate HTML on all pages (only did front-page.php)
+* Make entire website mobile responsive (desktop only at the moment)
