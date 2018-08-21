@@ -80,14 +80,13 @@
 }
 
 @mixin front-page-container() {
-  width: 92%;
+  width: 1190px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: auto;
 }
 
 @mixin hyperlinks() {

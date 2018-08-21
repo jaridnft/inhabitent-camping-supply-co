@@ -7,7 +7,6 @@
 */
 
 .front-page-container {
-  display: flex;
   flex-direction: column;
   width: 100%;
   h2 {
@@ -29,8 +28,6 @@
   }
   .front-page-journal-container {
     @include front-page-container();
-    display: flex;
-    justify-content: center;
     article {
       position: relative;
       margin: 1%;
@@ -105,6 +102,33 @@
     text-align: center;
     margin-left: 25px;
     margin-right: 25px;
+  }
+}
+.front-page-adventure-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+  width: 1190px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: auto;
+  & .adventure-post:first-of-type {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  & .adventure-post:nth-of-type(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+  }
+}
+.more-adventures-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  a.more-adventures {
+    @include submit-green-button();
+    text-decoration: none;
   }
 }
 
