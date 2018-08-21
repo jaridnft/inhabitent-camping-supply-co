@@ -90,7 +90,7 @@ function inhabitent_scripts() {
 
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
-	if ( is_front_page() || is_page_template( 'page-about.php' ) || is_page_template( 'single-adventure.php' )) {
+	if ( is_front_page() || is_page_template( 'page-about.php' ) ) {
 		wp_enqueue_script( 'hero-header', get_template_directory_uri() . '/build/js/hero-header.min.js', array( 'jquery' ), '1.0.0', true );
 	}
 

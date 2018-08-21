@@ -9,6 +9,7 @@
 
 <div class="product-single-item">
 	<?php if ( has_post_thumbnail() ) : ?>
+	
 		<div class="product-single-image">
     
       <a href="<?php echo esc_url( get_permalink() )?>"><?php the_post_thumbnail( 'large' ); ?></a>

@@ -10,6 +10,7 @@
 <div class="product-grid-item">
 	<div class="product-thumbnail-container">
 		<?php if ( has_post_thumbnail() ) : ?>
+		
 			<a href="<?php echo esc_url( get_permalink() )?>"><?php the_post_thumbnail( 'large' ); ?></a>
 			
 		<?php endif; ?>

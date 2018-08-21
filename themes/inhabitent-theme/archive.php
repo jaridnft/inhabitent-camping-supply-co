@@ -7,8 +7,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="archive-content-area">
-		<main id="main" class="archive-site-main" role="main">
+<div id="primary" class="archive-content-area">
+	<main id="main" class="archive-site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,9 +22,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
 
@@ -36,8 +34,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

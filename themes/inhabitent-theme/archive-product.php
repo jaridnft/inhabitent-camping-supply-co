@@ -9,22 +9,22 @@
 
 get_header(); ?>
 
-	<div id="primary" class="product-content-area">
-		<main id="main" class="product-site-main" role="main">
-			<h1>Shop Stuff</h1>
-			<ul><?php
-				$terms = get_terms( array('taxonomy' => 'product_type') );
-				foreach ( $terms as $term ) {
-					$term_link = get_term_link( $term );
-					
-					// If there was an error, continue to the next term.
-  				if ( is_wp_error( $term_link ) ) {
-					continue;
-					}
-				echo '<li><a href="' . esc_url( $term_link ) . '">' . $term->name . '</a></li>';
-				echo ' ';
-				}?>
-			</ul>
+<div id="primary" class="product-content-area">
+	<main id="main" class="product-site-main" role="main">
+		<h1>Shop Stuff</h1>
+		<ul><?php
+			$terms = get_terms( array('taxonomy' => 'product_type') );
+			foreach ( $terms as $term ) {
+				$term_link = get_term_link( $term );
+				
+				// If there was an error, continue to the next term.
+				if ( is_wp_error( $term_link ) ) {
+				continue;
+				}
+			echo '<li><a href="' . esc_url( $term_link ) . '">' . $term->name . '</a></li>';
+			echo ' ';
+			}?>
+		</ul>
 
 		<div class="products-grid-container">
 			<?php		
@@ -44,7 +44,7 @@ get_header(); ?>
 			<?php endforeach; ?>
 		</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

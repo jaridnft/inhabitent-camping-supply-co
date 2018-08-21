@@ -23,6 +23,7 @@
 							</p>
 						</div>
 					</div>
+					
 					<div class="footer-block-item">
 						<div class="business-hours">
 							<h3>Business Hours</h3>
@@ -40,6 +41,7 @@
 							</p>
 						</div>
 					</div>
+
 					<div class="footer-block-item">
 						<div class="text-logo">
 							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg"></img></a>
@@ -49,6 +51,7 @@
 				<div class="site-info">
 					<a href=#>Copyright &copy; <?php echo date("Y"); ?> Inhabitent</a>
 				</div><!-- .site-info -->
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 	
