@@ -1,4 +1,4 @@
-# 'Inhabitent Camping Supply Co.' e-commerce store and blog build with WordPress.
+# 'Inhabitent Camping Supply Co.' powered by WordPress.
 
 #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
 
@@ -26,5 +26,6 @@ This was my first attempt at building a completely custom WordPress theme. This 
 ## @TODO
 
 * Add 'Adventures' section to front page (this code can be found on code pushed on Aug 20, 2018)
+* Add 'Adventures' archive page (single page for 'Adventures' is already completed)
 * Widget-ize footer
 * Validate HTML on all pages (only did front-page.php)
