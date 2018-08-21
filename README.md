@@ -23,4 +23,8 @@ This was my first attempt at building a completely custom WordPress theme. This 
 
 (this will automatically compile Sass -> CSS and minify JS scripts)
 
+## @TODO
 
+* Add 'Adventures' section to front page (this code can be found on code pushed on Aug 20, 2018)
+* Widget-ize footer
+* Validate HTML on all pages (only did front-page.php)
