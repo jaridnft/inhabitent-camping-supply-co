@@ -4,7 +4,7 @@
 
 ## Motivation
 
-This was my first attempt at building a completely custom WordPress theme. This site takes advantage of WordPress' built-in back-end capibilities to make a completely dynamic site using PHP and the WordPress template hierarchy.
+This was my first attempt at building a completely custom WordPress theme. This site takes advantage of WordPress' built-in back-end capabilities to make a completely dynamic site using PHP and the WordPress template hierarchy.
 
 ![alt-text](/themes/inhabitent-theme/screenshot.png 'Inhabitent Theme Preview')
 
@@ -19,7 +19,7 @@ This was my first attempt at building a completely custom WordPress theme. This 
 
 **To build CSS/JS if changed:**
 
-`> gulp
+> gulp
 
 (this will automatically compile Sass -> CSS and minify JS scripts)
 
