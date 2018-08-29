@@ -8,15 +8,15 @@
 get_header(); ?>
 
 <div id="primary" class="journal-content-area">
-	<main id="main" class="journal-site-main" role="main">
+    <main id="main" class="journal-site-main" role="main">
 
-	<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'template-parts/content', '' ); ?>
-		
-	<?php endwhile; ?>
+			<?php get_template_part( 'template-parts/content', '' ); ?>
 
-	</main><!-- #main -->
+		<?php endwhile; ?>
+
+    </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_sidebar(); ?>

@@ -8,16 +8,16 @@
 get_header(); ?>
 
 <div id="primary" class="archive-content-area">
-	<main id="main" class="archive-site-main" role="main">
+    <main id="main" class="archive-site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="archive-page-header">
+            <header class="archive-page-header">
 				<?php
-					the_archive_title( '<h1 class="archive-page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-taxonomy-description">', '</div>' );
+				the_archive_title( '<h1 class="archive-page-title">', '</h1>' );
+				the_archive_description( '<div class="archive-taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+            </header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-	</main><!-- #main -->
+    </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_sidebar(); ?>

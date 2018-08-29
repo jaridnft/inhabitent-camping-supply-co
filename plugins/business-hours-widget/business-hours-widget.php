@@ -20,19 +20,19 @@
  */
 
 // Prevent direct file access
-if ( ! defined ( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
 class Inhabitent_Business_Hours extends WP_Widget {
 
-    /**
-     * @since    1.0.0
-     *
-     * @var      string
-     */
-    protected $widget_slug = 'inhabitent-business-hours';
+	/**
+	 * @since    1.0.0
+	 *
+	 * @var      string
+	 */
+	protected $widget_slug = 'inhabitent-business-hours';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -48,23 +48,23 @@ class Inhabitent_Business_Hours extends WP_Widget {
 			$this->get_widget_slug(),
 			'Inhabitent Business Hours',
 			array(
-				'classname'  => $this->get_widget_slug().'-class',
+				'classname'   => $this->get_widget_slug() . '-class',
 				'description' => 'Add the store\'s business hours.'
 			)
 		);
 
 	} // end constructor
 
-    /**
-     * Return the widget slug.
-     *
-     * @since    1.0.0
-     *
-     * @return    Plugin slug variable.
-     */
-    public function get_widget_slug() {
-        return $this->widget_slug;
-    }
+	/**
+	 * Return the widget slug.
+	 *
+	 * @since    1.0.0
+	 *
+	 * @return    Plugin slug variable.
+	 */
+	public function get_widget_slug() {
+		return $this->widget_slug;
+	}
 
 	/*--------------------------------------------------*/
 	/* Widget API Functions
@@ -73,14 +73,14 @@ class Inhabitent_Business_Hours extends WP_Widget {
 	/**
 	 * Outputs the content of the widget.
 	 *
-	 * @param array $args     The array of form elements
+	 * @param array $args The array of form elements
 	 * @param array $instance The current instance of the widget
 	 */
 	public function widget( $args, $instance ) {
 
 		if ( ! isset ( $args['widget_id'] ) ) {
-         $args['widget_id'] = $this->id;
-      }
+			$args['widget_id'] = $this->id;
+		}
 
 		// go on with your widget logic, put everything into a string and …
 
@@ -89,14 +89,14 @@ class Inhabitent_Business_Hours extends WP_Widget {
 		$widget_string = $before_widget;
 
 		// Manipulate the widget's values based on their input fields
-		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		$monday_friday = empty( $instance['monday_friday'] ) ? '' : apply_filters( 'monday_friday', $instance['monday_friday']);
-		$saturday = empty( $instance['saturday'] ) ? '' : apply_filters( 'saturday', $instance['saturday']);
-		$sunday = empty( $instance['sunday'] ) ? '' : apply_filters( 'sunday', $instance['sunday']);
+		$title         = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
+		$monday_friday = empty( $instance['monday_friday'] ) ? '' : apply_filters( 'monday_friday', $instance['monday_friday'] );
+		$saturday      = empty( $instance['saturday'] ) ? '' : apply_filters( 'saturday', $instance['saturday'] );
+		$sunday        = empty( $instance['sunday'] ) ? '' : apply_filters( 'sunday', $instance['sunday'] );
 
 		ob_start();
 
-		if ( $title ){
+		if ( $title ) {
 			$widget_string .= $before_title;
 			$widget_string .= $title;
 			$widget_string .= $after_title;
@@ -120,10 +120,10 @@ class Inhabitent_Business_Hours extends WP_Widget {
 
 		$instance = $old_instance;
 
-		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['title']         = strip_tags( $new_instance['title'] );
 		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
-		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
-		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
+		$instance['saturday']      = strip_tags( $new_instance['saturday'] );
+		$instance['sunday']        = strip_tags( $new_instance['sunday'] );
 
 		return $instance;
 
@@ -139,17 +139,17 @@ class Inhabitent_Business_Hours extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'Business Hours',
+				'title'         => 'Business Hours',
 				'monday_friday' => '',
-				'saturday' => '',
-				'sunday' => ''
+				'saturday'      => '',
+				'sunday'        => ''
 			)
 		);
 
-		$title = strip_tags( $instance['title'] );
+		$title         = strip_tags( $instance['title'] );
 		$monday_friday = strip_tags( $instance['monday_friday'] );
-		$saturday = strip_tags( $instance['saturday'] );
-		$sunday = strip_tags( $instance['sunday'] );
+		$saturday      = strip_tags( $instance['saturday'] );
+		$sunday        = strip_tags( $instance['sunday'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -159,6 +159,6 @@ class Inhabitent_Business_Hours extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
-add_action( 'widgets_init', function(){
-     register_widget( 'Inhabitent_Business_Hours' );
-});
+add_action( 'widgets_init', function () {
+	register_widget( 'Inhabitent_Business_Hours' );
+} );

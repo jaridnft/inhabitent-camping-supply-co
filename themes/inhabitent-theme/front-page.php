@@ -7,66 +7,68 @@
 
 get_header(); ?>
 <div class="front-page-container">
-  <div class="front-page-hero hero-image-header">
-    <img class="main-logo" alt="Inhabitent primary logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
-  </div>
+    <div class="front-page-hero hero-image-header">
+        <img class="main-logo" alt="Inhabitent primary logo"
+             src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
+    </div>
 
-  <h2>Shop Stuff</h2>
-  <div class="front-page-shop-container">
-    <?php
-      $terms = get_terms( array('taxonomy' => 'product_type') );
-    ?>
+    <h2>Shop Stuff</h2>
+    <div class="front-page-shop-container">
+		<?php
+		$terms = get_terms( array( 'taxonomy' => 'product_type' ) );
+		?>
 
-    <?php foreach ( $terms as $term ) : setup_postdata( $term ); ?>
-    
-      <?php 
-        echo '<div class="front-page-shop-item">';
-        echo '<img alt="' . 'icon for ' . $term->name . '" src="' . get_stylesheet_directory_uri() . '/images/product-type-icons/' . $term->name . '.svg">';
-        echo '<p>' . $term->description . '</p>';
-        echo '<a href="' . get_term_link($term) . '">' . $term->name . ' Stuff' . '</a>
-        </div>'; 
-      ?>
+		<?php foreach ( $terms as $term ) : setup_postdata( $term ); ?>
 
-    <?php endforeach; ?>
-  </div> <!-- end of front-page-shop-container -->
+			<?php
+			echo '<div class="front-page-shop-item">';
+			echo '<img alt="' . 'icon for ' . $term->name . '" src="' . get_stylesheet_directory_uri() . '/images/product-type-icons/' . $term->name . '.svg">';
+			echo '<p>' . $term->description . '</p>';
+			echo '<a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff' . '</a>
+				</div>';
+			?>
 
-  <h2>Inhabitent Journal</h2>
-  <div class="front-page-journal-container">
-      <?php		
-        $journal_args = array(
-            'posts_per_page' => 3		
-        );
+		<?php endforeach; ?>
+    </div> <!-- end of front-page-shop-container -->
 
-        $journal_posts = get_posts( $journal_args );
-      ?>
+    <h2>Inhabitent Journal</h2>
+    <div class="front-page-journal-container">
+		<?php
+		$journal_args = array(
+			'posts_per_page' => 3
+		);
 
-      <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+		$journal_posts = get_posts( $journal_args );
+		?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 
-            <?php if ( has_post_thumbnail() ) : ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-              <?php the_post_thumbnail( 'large' ); ?>
+				<?php if ( has_post_thumbnail() ) : ?>
 
-            <?php endif; ?>
+					<?php the_post_thumbnail( 'large' ); ?>
 
-            <?php if ( 'post' === get_post_type() ) : ?>
-            
-              <div class="front-page-entry-meta">
-                <p><?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
-                <?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-              </div><!-- .entry-meta -->
-              <?php 
-                echo '<div class="journal-read-more-container"><a href="'. esc_url( get_permalink() ) . '">Read more &rarr;</a></div>';
-              ?>
+				<?php endif; ?>
 
-            <?php endif; ?>
+				<?php if ( 'post' === get_post_type() ) : ?>
 
-        </article><!-- #post-## -->
+                    <div class="front-page-entry-meta">
+                        <p><?php inhabitent_posted_on(); ?>
+                            / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
+						<?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                    </div><!-- .entry-meta -->
+					<?php
+					echo '<div class="journal-read-more-container"><a href="' . esc_url( get_permalink() ) . '">Read more &rarr;</a></div>';
+					?>
 
-      <?php endforeach; ?>
+				<?php endif; ?>
+
+            </article><!-- #post-## -->
+
+		<?php endforeach; ?>
     </div> <!-- end of front-page-journal-container -->
 
-  </div>
+</div>
 
 <?php get_footer(); ?>
