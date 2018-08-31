@@ -1,0 +1,37 @@
+/** 
+ * Adventure Single Page
+ */
+
+.adventure-page-container {
+  width: 100%;
+  padding: 0 0 60px 0;
+  .adventure-header-image img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  h1 {
+    @include header-font(2.4rem, null);
+    text-align: left;
+    margin: 3rem auto 0 auto;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    width: 800px;
+  }
+  .author {
+    @include header-font(1.25rem);
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .social-buttons {
+    width: 800px;
+    margin: 30px auto;
+    .black-btn {
+      @include social-button();
+    }
+  }
+}

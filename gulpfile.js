@@ -1,28 +1,29 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
   browserSync = require('browser-sync').create(),
   eslint = require('gulp-eslint'),
   sass = require('gulp-sass'),
   babel = require('gulp-babel'),
-  autoprefixer = require('gulp-autoprefixer'),
-  cssnano = require('gulp-cssnano'),
-  prettyError = require('gulp-prettyerror');
+  autoPrefixer = require('gulp-autoprefixer'),
+  cssNano = require('gulp-cssnano'),
+  prettyError = require('gulp-prettyerror'),
+  imageOp = require('gulp-image-optimization');
 
 const basePath = 'themes/inhabitent-theme/';
 
 gulp.task('sass', () => {
   return gulp
-    .src(basePath + 'sass/style.scss')
+    .src(basePath + 'src/scss/style.scss')
     .pipe(prettyError())
     .pipe(sass())
     .pipe(
-      autoprefixer({
+      autoPrefixer({
         browsers: ['last 2 versions']
       })
     )
     .pipe(gulp.dest(basePath + 'build/css/'))
-    .pipe(cssnano())
+    .pipe(cssNano())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest(basePath + 'build/css'));
 });
@@ -30,7 +31,7 @@ gulp.task('sass', () => {
 gulp.task('lint', () => {
   return (
     gulp
-      .src(basePath + '/js/*.js')
+      .src(basePath + 'src/js/*.js')
       // eslint() attaches the lint output to the "eslint" property
       // of the file object so it can be used by other modules.
       .pipe(eslint())
@@ -47,7 +48,7 @@ gulp.task(
   'scripts',
   gulp.series('lint', () => {
     return gulp
-      .src(basePath + 'js/*.js') // these are the files gulp will consume
+      .src(basePath + 'src/js/*.js') // these are the files gulp will consume
       .pipe(babel()) // transcompile ES6 to ES5
       .pipe(uglify()) // call uglify function on these files
       .pipe(
@@ -61,8 +62,8 @@ gulp.task(
 
 gulp.task('watch', () => {
   // pass in files that need to be uglified
-  gulp.watch(basePath + 'js/*.js', gulp.series('scripts'));
-  gulp.watch(basePath + 'sass/*.scss', gulp.series('sass'));
+  gulp.watch(basePath + 'src/js/*.js', gulp.series('scripts'));
+  gulp.watch(basePath + 'src/scss/*.scss', gulp.series('sass'));
 });
 
 gulp.task('browser-sync', function() {

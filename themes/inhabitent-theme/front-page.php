@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="front-page-container">
     <div class="front-page-hero hero-image-header">
         <img class="main-logo" alt="Inhabitent primary logo"
-             src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg">
+             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logos/inhabitent-logo-full.svg">
     </div>
 
     <h2>Shop Stuff</h2>
@@ -22,7 +22,7 @@ get_header(); ?>
 
 			<?php
 			echo '<div class="front-page-shop-item">';
-			echo '<img alt="' . 'icon for ' . $term->name . '" src="' . get_stylesheet_directory_uri() . '/images/product-type-icons/' . $term->name . '.svg">';
+			echo '<img alt="' . 'icon for ' . $term->name . '" src="' . get_stylesheet_directory_uri() . '/assets/images/product-type-icons/' . $term->name . '.svg">';
 			echo '<p>' . $term->description . '</p>';
 			echo '<a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff' . '</a>
 				</div>';

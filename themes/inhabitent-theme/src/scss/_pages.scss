@@ -1,0 +1,137 @@
+/*--------------------------------------------------------------
+# Container file for remaining pages
+--------------------------------------------------------------*/
+
+/* 
+* About Page
+*/
+
+.about-content-area {
+  width: 100%;
+  .hero-image-header {
+    height: 100vh;
+  }
+  .entry-content {
+    margin-top: 0;
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  h2 {
+    @include header-font(2.1rem, null);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+}
+
+/** 
+ * Search
+ */
+
+.search-content-area {
+  display: flex;
+  flex-direction: row;
+  .search-site-main {
+    width: 75%;
+    max-width: 760px;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h1 {
+      @include header-font(2.4rem, null);
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+      margin-top: 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    h2 a {
+      line-height: 1.25;
+      text-decoration: none;
+      color: $color_brand_green;
+    }
+    .search-entry-summary a {
+      @include header-font(0.9rem, null);
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-decoration: none;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/** 
+ * Archives
+ */
+
+.archive-content-area {
+  width: 75%;
+  max-width: 760px;
+  margin-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h1 {
+    @include header-font(2.4rem, null);
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+/* 
+  * 404 Page
+  */
+
+.site-content {
+  margin-top: 55px;
+  &.top {
+    margin-top: 0;
+  }
+}
+
+.site-main-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .error-404 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 5%;
+    max-width: 800px;
+    p {
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+  }
+  h1 {
+    @include header-font(2.4rem, null);
+    line-height: 1.25;
+  }
+  h2 {
+    @include header-font(null, null);
+  }
+  .search-submit {
+    display: none;
+  }
+  .search-field {
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    padding: 6px;
+  }
+  .search-form {
+    padding-bottom: 15px;
+  }
+}
+
+.widget_archive p {
+  padding: 0;
+}

@@ -10,23 +10,46 @@ This was my first attempt at building a completely custom WordPress theme. This 
 
 ## Technology
 
-* WordPress / PHP
-* HTML / CSS
-* JavaScript / jQuery
-* Gulp / NPM
+- WordPress / PHP
+- JavaScript ES6 / jQuery
+- HTML5 / CSS3
+- NPM / Gulp
 
 ## Setup
 
-**To build CSS/JS if changed:**
+**Install WordPress:**
 
-> gulp
+- [Download Wordpress](https://wordpress.org/latest.zip) and place directory at root of server (you'll need a tool like [MAMP](https://www.mamp.info/en/) if you wish to host locally)
+- Replace `themes`, `plugins` and `uploads` folders from install with ones in this repo
 
-(this will automatically compile Sass -> CSS and minify JS scripts)
+**Initialize NPM:**
+
+`> npm init`
+
+**Install Gulp:**
+
+`> npm install`
+
+**Convert Sass files to CSS:**
+
+`> gulp sass`
+
+**Call Babel & Uglify on JS files:**
+
+`> gulp scripts`
+
+**Launch Browser-Sync to automatically update changes:**
+
+`> gulp browser-sync`
+
+**Watch changes to Sass/JS and automatically run scripts/sass:**
+
+`> gulp watch` or `gulp`
 
 ## @TODO
 
-* Add 'Adventures' section to front page (this code can be found on code pushed on Aug 20, 2018)
-* Add 'Adventures' archive page (single page for 'Adventures' is already completed)
-* Widget-ize footer
-* Validate HTML on all pages (only did front-page.php)
-* Make entire website mobile responsive (desktop only at the moment)
+- Add 'Adventures' section to front page (this code can be found on code pushed on Aug 20, 2018)
+- Add 'Adventures' archive page (single page for 'Adventures' is already completed)
+- Widget-ize footer
+- Validate HTML on all pages (only did front-page.php)
+- Make entire website mobile responsive (desktop only at the moment)

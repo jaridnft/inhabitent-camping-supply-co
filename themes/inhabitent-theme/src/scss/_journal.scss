@@ -1,0 +1,83 @@
+/** 
+ * Journal (main blog settings) & single page 
+ */
+
+.journal-content-area,
+.single-content-area {
+  max-width: 760px;
+  padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  article {
+    padding-bottom: 60px;
+  }
+}
+
+.journal-entry-header,
+.single-entry-header {
+  position: relative;
+  padding-right: 0;
+  img {
+    width: 100%;
+    display: block;
+  }
+  h1,
+  h2 {
+    @include header-font(2rem, white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    background-color: $color_brand_green;
+    margin-top: 45px;
+    line-height: 1.25;
+    width: 75%;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .journal-entry-meta,
+  .single-entry-meta {
+    @include header-font(1.2rem, white);
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    padding: 0px 30px;
+    background-color: $color_brand_green;
+    .comments-link a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.journal-entry-content {
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    @include read-more();
+  }
+}
+
+.single-entry-footer {
+  @include header-font(null, null);
+  .cat-links {
+    margin-right: 30px;
+  }
+  a {
+    color: $color_brand_green;
+    text-decoration: none;
+  }
+  .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .black-btn {
+      @include social-button();
+    }
+    .fab {
+      font-size: 0.9rem;
+    }
+  }
+}

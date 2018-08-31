@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Inhabitent Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -27,21 +27,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-    ## Links
-    ## Menus
+	## Links
+	## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-    ## Posts and pages
-    ## Asides
-    ## Comments
+	## Posts and pages
+	## Asides
+	## Comments
 # Media
-    ## Captions
-    ## Galleries
+	## Captions
+	## Galleries
 # Page Templates
-    ## Front page
+	## Front page
 --------------------------------------------------------------*/
 /*
 * HIGH PPI DISPLAY BACKGROUNDS
@@ -230,43 +230,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-LightItalic.eot");
-  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../assets/fonts/Merriweather-LightItalic.eot");
+  src: url("../../assets/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-Light.eot");
-  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../assets/fonts/Merriweather-Light.eot");
+  src: url("../../assets/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Light.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Light.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-Bold.eot");
-  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../assets/fonts/Merriweather-Bold.eot");
+  src: url("../../assets/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Bold.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Wide';
-  src: url("../../fonts/Novecentosanswide-Normal.eot");
-  src: url("../../fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecentosanswide-Normal.svg#.") format("svg");
+  src: url("../../assets/fonts/Novecentosanswide-Normal.eot");
+  src: url("../../assets/fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-Normal.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-Normal.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Wide';
-  src: url("../../fonts/Novecentosanswide-DemiBold.eot");
-  src: url("../../fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../fonts/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../fonts/Novecentosanswide-DemiBold.svg#.") format("svg");
+  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot");
+  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-DemiBold.svg#.") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-BoldItalic.eot");
-  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../assets/fonts/Merriweather-BoldItalic.eot");
+  src: url("../../assets/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
@@ -724,6 +724,9 @@ object {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.logged-in .site-header {
+  margin-top: 35px; }
+
 .site-header {
   z-index: 999;
   width: 100%;
@@ -754,11 +757,11 @@ object {
           justify-content: flex-start;
   width: 10%; }
   .site-branding .img-div {
-    background-image: url(../../images/logos/inhabitent-logo-tent.svg);
+    background-image: url(../../assets/images/logos/inhabitent-logo-tent.svg);
     background-size: cover;
     padding: 16px 25px; }
     .site-branding .img-div.top {
-      background-image: url(../../images/logos/inhabitent-logo-tent-white.svg); }
+      background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg); }
 
 .main-navigation {
   display: -webkit-box;
@@ -829,13 +832,13 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../images/dark-wood.png");
+  background-image: url("../../assets/images/dark-wood.png");
   background-size: "100%" "470px";
   background-position: center center;
   background-repeat: repeat; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     #colophon {
-      background-image: url("../../images/dark-wood@2x.png"); } }
+      background-image: url("../../assets/images/dark-wood@2x.png"); } }
 
 .footer-blocks {
   display: -webkit-box;
@@ -941,8 +944,499 @@ object {
     color: black; }
 
 /*--------------------------------------------------------------
-# Pages
+# Container file for remaining pages
 --------------------------------------------------------------*/
+/* 
+* About Page
+*/
+.about-content-area {
+  width: 100%; }
+  .about-content-area .hero-image-header {
+    height: 100vh; }
+  .about-content-area .entry-content {
+    margin-top: 0; }
+  .about-content-area h1 {
+    color: white;
+    font-size: 3rem; }
+  .about-content-area h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+    letter-spacing: 2px; }
+  .about-content-area p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px; }
+
+/** 
+ * Search
+ */
+.search-content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .search-content-area .search-site-main {
+    width: 75%;
+    max-width: 760px;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .search-content-area .search-site-main h1 {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 2.4rem;
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+      margin-top: 0;
+      border-bottom: 1px solid #e1e1e1; }
+    .search-content-area .search-site-main h2 a {
+      line-height: 1.25;
+      text-decoration: none;
+      color: #248a83; }
+    .search-content-area .search-site-main .search-entry-summary a {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem;
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-decoration: none; }
+    .search-content-area .search-site-main p {
+      margin-bottom: 30px; }
+
+/** 
+ * Archives
+ */
+.archive-content-area {
+  width: 75%;
+  max-width: 760px;
+  margin-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .archive-content-area h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    border-bottom: 1px solid #e1e1e1; }
+
+/* 
+  * 404 Page
+  */
+.site-content {
+  margin-top: 55px; }
+  .site-content.top {
+    margin-top: 0; }
+
+.site-main-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .site-main-404 .error-404 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 5%;
+    max-width: 800px; }
+    .site-main-404 .error-404 p {
+      padding-bottom: 30px;
+      padding-top: 20px; }
+  .site-main-404 h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.25; }
+  .site-main-404 h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif; }
+  .site-main-404 .search-submit {
+    display: none; }
+  .site-main-404 .search-field {
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    padding: 6px; }
+  .site-main-404 .search-form {
+    padding-bottom: 15px; }
+
+.widget_archive p {
+  padding: 0; }
+
+/** 
+ * Adventure Single Page
+ */
+.adventure-page-container {
+  width: 100%;
+  padding: 0 0 60px 0; }
+  .adventure-page-container .adventure-header-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100vh;
+    width: 100%; }
+  .adventure-page-container h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    text-align: left;
+    margin: 3rem auto 0 auto;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    width: 800px; }
+  .adventure-page-container .author {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    color: "inherit";
+    font-size: 1.25rem;
+    margin-bottom: 1rem; }
+  .adventure-page-container p {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px; }
+  .adventure-page-container .social-buttons {
+    width: 800px;
+    margin: 30px auto; }
+    .adventure-page-container .social-buttons .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem; }
+
+/** 
+ * Product Single
+ */
+.product-single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px; }
+  .product-single-item .product-single-image {
+    width: 45%; }
+  .product-single-item .product-single-content {
+    width: 45%; }
+    .product-single-item .product-single-content h1 {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      color: #d99054;
+      font-size: 2.4rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.25; }
+    .product-single-item .product-single-content .product-single-price {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 1.8rem;
+      margin-top: 0; }
+  .product-single-item .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .product-single-item .social-buttons .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem; }
+    .product-single-item .social-buttons .fab {
+      font-size: 0.9rem; }
+
+/** 
+ * Product Archive
+ */
+.product-site-main {
+  width: 100%; }
+  .product-site-main h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    line-height: 1.25; }
+  .product-site-main ul {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 30px; }
+    .product-site-main ul li {
+      display: inline; }
+    .product-site-main ul a {
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 200;
+      margin: 25px; }
+      .product-site-main ul a:visited {
+        color: #248a83; }
+      .product-site-main ul a:hover {
+        color: black; }
+
+.product-content-area {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .product-content-area .products-grid-container {
+    border-top: 1px #aaa dashed;
+    padding-top: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
+    margin-bottom: 1.5rem; }
+  .product-content-area .product-grid-item {
+    border: 1px solid #e1e1e1; }
+  .product-content-area .product-thumbnail-container {
+    height: 250px; }
+    .product-content-area .product-thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  .product-content-area .product-entry-content {
+    padding: 15px 20px;
+    font-size: 0.9rem; }
+
+/** 
+ * Taxonomy
+ */
+.tax-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  padding-top: 60px;
+  border-top: 1px #aaa dashed; }
+  .tax-grid-container .tax-thumbnail-container {
+    height: 250px; }
+    .tax-grid-container .tax-thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  .tax-grid-container .tax-entry-content {
+    padding: 15px 20px;
+    font-size: 0.9rem; }
+  .tax-grid-container .tax-grid-item {
+    border: 1px solid #e1e1e1; }
+
+.tax-site-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .tax-site-main h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 0; }
+  .tax-site-main p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 60px;
+    max-width: 800px; }
+
+/** 
+ * Journal (main blog settings) & single page 
+ */
+.journal-content-area,
+.single-content-area {
+  max-width: 760px;
+  padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .journal-content-area article,
+  .single-content-area article {
+    padding-bottom: 60px; }
+
+.journal-entry-header,
+.single-entry-header {
+  position: relative;
+  padding-right: 0; }
+  .journal-entry-header img,
+  .single-entry-header img {
+    width: 100%;
+    display: block; }
+  .journal-entry-header h1,
+  .journal-entry-header h2,
+  .single-entry-header h1,
+  .single-entry-header h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    background-color: #248a83;
+    margin-top: 45px;
+    line-height: 1.25;
+    width: 75%; }
+    .journal-entry-header h1 a,
+    .journal-entry-header h2 a,
+    .single-entry-header h1 a,
+    .single-entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+  .journal-entry-header .journal-entry-meta,
+  .journal-entry-header .single-entry-meta,
+  .single-entry-header .journal-entry-meta,
+  .single-entry-header .single-entry-meta {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    padding: 0px 30px;
+    background-color: #248a83; }
+    .journal-entry-header .journal-entry-meta .comments-link a,
+    .journal-entry-header .single-entry-meta .comments-link a,
+    .single-entry-header .journal-entry-meta .comments-link a,
+    .single-entry-header .single-entry-meta .comments-link a {
+      color: white;
+      text-decoration: none; }
+
+.journal-entry-content p {
+  margin-bottom: 30px; }
+
+.journal-entry-content a {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 1px black solid; }
+
+.single-entry-footer {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif; }
+  .single-entry-footer .cat-links {
+    margin-right: 30px; }
+  .single-entry-footer a {
+    color: #248a83;
+    text-decoration: none; }
+  .single-entry-footer .social-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .single-entry-footer .social-buttons .black-btn {
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px black solid;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Wide", sans-serif;
+      font-size: 0.9rem; }
+    .single-entry-footer .social-buttons .fab {
+      font-size: 0.9rem; }
+
+/** 
+ * Find Us Page (general page.php settings)
+ */
+.post-2 {
+  max-width: 760px;
+  padding-right: 8%;
+  padding-top: 60px; }
+  .post-2 h1 {
+    letter-spacing: 2px; }
+  .post-2 h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.1rem;
+    text-align: start;
+    line-height: 1.25;
+    letter-spacing: 2px; }
+  .post-2 p {
+    margin: 0;
+    max-width: 700px; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .site-content .content-area {
+    padding-bottom: 60px; }
+
+.entry-title {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 2.4rem;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.wpcf7-form p {
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .wpcf7-form p label {
+    margin-bottom: 10px;
+    font-size: 1.1rem; }
+  .wpcf7-form p .asterisk {
+    color: #d99054; }
+  .wpcf7-form p .wpcf7-textarea {
+    height: 350px;
+    max-width: 700px; }
+
+.wpcf7-form .wpcf7-submit {
+  background: none #248a83;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-size: 0.9rem;
+  padding: 15px 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0; }
+  .wpcf7-form .wpcf7-submit:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.wpcf7-form-control {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  height: 49px;
+  margin-top: 10px; }
+
 /* 
 * Front Page
 */
@@ -962,8 +1456,8 @@ object {
   .front-page-container .front-page-hero {
     height: 100vh;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/home-hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/home-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../assets/images/home-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../assets/images/home-hero.jpg);
     background-size: cover;
     background-position: 50% 50%;
     display: -webkit-box;
@@ -1145,251 +1639,6 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none; }
 
-/* 
-* 404 Page
-*/
-.site-content {
-  margin-top: 55px; }
-  .site-content.top {
-    margin-top: 0; }
-
-.site-main-404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .site-main-404 .error-404 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 5%;
-    max-width: 800px; }
-  .site-main-404 h1 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.4rem;
-    line-height: 1.25; }
-  .site-main-404 h2 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif; }
-  .site-main-404 p {
-    padding-bottom: 30px;
-    padding-top: 20px; }
-  .site-main-404 .search-submit {
-    display: none; }
-  .site-main-404 .search-field {
-    background-color: #f6f6f6;
-    border: 1px solid #e1e1e1;
-    padding: 6px; }
-  .site-main-404 .search-form {
-    padding-bottom: 15px; }
-
-.widget_archive p {
-  padding: 0; }
-
-/* 
-* About Page
-*/
-.about-content-area {
-  width: 100%; }
-  .about-content-area .hero-image-header {
-    height: 100vh; }
-  .about-content-area .entry-content {
-    margin-top: 0; }
-  .about-content-area h1 {
-    color: white;
-    font-size: 3rem; }
-  .about-content-area h2 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.1rem;
-    text-align: center;
-    letter-spacing: 2px; }
-  .about-content-area p {
-    width: 800px;
-    margin: auto;
-    padding-bottom: 30px; }
-
-/** 
- * Find Us Page (general page.php settings)
- */
-.post-2 {
-  max-width: 760px;
-  padding-right: 8%;
-  padding-top: 60px; }
-  .post-2 h1 {
-    letter-spacing: 2px; }
-  .post-2 h2 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.1rem;
-    text-align: start;
-    line-height: 1.25;
-    letter-spacing: 2px; }
-  .post-2 p {
-    margin: 0;
-    max-width: 700px; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .site-content .content-area {
-    padding-bottom: 60px; }
-
-.entry-title {
-  text-transform: uppercase;
-  font-family: "Novecento Sans Wide", sans-serif;
-  font-size: 2.4rem;
-  margin: 0;
-  margin-bottom: 10px; }
-
-.wpcf7-form p {
-  text-transform: uppercase;
-  font-family: "Novecento Sans Wide", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 30px; }
-  .wpcf7-form p label {
-    margin-bottom: 10px;
-    font-size: 1.1rem; }
-  .wpcf7-form p .asterisk {
-    color: #d99054; }
-  .wpcf7-form p .wpcf7-textarea {
-    height: 350px;
-    max-width: 700px; }
-
-.wpcf7-form .wpcf7-submit {
-  background: none #248a83;
-  cursor: pointer;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Novecento Sans Wide", sans-serif;
-  font-size: 0.9rem;
-  padding: 15px 30px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  border: 0;
-  border-radius: 0; }
-  .wpcf7-form .wpcf7-submit:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), #248a83;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.wpcf7-form-control {
-  color: #666;
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  height: 49px;
-  margin-top: 10px; }
-
-/** 
- * Journal (main blog settings) & single page 
- */
-.journal-content-area,
-.single-content-area {
-  max-width: 760px;
-  padding-right: 5%;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  .journal-content-area article,
-  .single-content-area article {
-    padding-bottom: 60px; }
-
-.journal-entry-header,
-.single-entry-header {
-  position: relative;
-  padding-right: 0; }
-  .journal-entry-header img,
-  .single-entry-header img {
-    width: 100%;
-    display: block; }
-  .journal-entry-header h1,
-  .journal-entry-header h2,
-  .single-entry-header h1,
-  .single-entry-header h2 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    color: white;
-    font-size: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 15px 30px;
-    background-color: #248a83;
-    margin-top: 45px;
-    line-height: 1.25;
-    width: 75%; }
-    .journal-entry-header h1 a,
-    .journal-entry-header h2 a,
-    .single-entry-header h1 a,
-    .single-entry-header h2 a {
-      color: white;
-      text-decoration: none; }
-  .journal-entry-header .journal-entry-meta,
-  .journal-entry-header .single-entry-meta,
-  .single-entry-header .journal-entry-meta,
-  .single-entry-header .single-entry-meta {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    color: white;
-    font-size: 1.2rem;
-    position: absolute;
-    bottom: 0%;
-    right: 0;
-    padding: 0px 30px;
-    background-color: #248a83; }
-    .journal-entry-header .journal-entry-meta .comments-link a,
-    .journal-entry-header .single-entry-meta .comments-link a,
-    .single-entry-header .journal-entry-meta .comments-link a,
-    .single-entry-header .single-entry-meta .comments-link a {
-      color: white;
-      text-decoration: none; }
-
-.journal-entry-content p {
-  margin-bottom: 30px; }
-
-.journal-entry-content a {
-  text-transform: uppercase;
-  font-family: "Novecento Sans Wide", sans-serif;
-  text-decoration: none;
-  padding: 15px 30px;
-  border: 1px black solid; }
-
-.single-entry-footer {
-  text-transform: uppercase;
-  font-family: "Novecento Sans Wide", sans-serif; }
-  .single-entry-footer .cat-links {
-    margin-right: 30px; }
-  .single-entry-footer a {
-    color: #248a83;
-    text-decoration: none; }
-  .single-entry-footer .social-buttons {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-    .single-entry-footer .social-buttons .black-btn {
-      padding: 15px 30px;
-      background-color: white;
-      border: 1px black solid;
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 0.9rem; }
-    .single-entry-footer .social-buttons .fab {
-      font-size: 0.9rem; }
-
 /** 
  * Comments
  */
@@ -1492,249 +1741,3 @@ object {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #248a83;
     -webkit-box-shadow: none;
             box-shadow: none; }
-
-/** 
- * Search
- */
-.search-content-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .search-content-area .search-site-main {
-    width: 75%;
-    max-width: 760px;
-    margin-right: 5%;
-    padding-top: 60px;
-    padding-bottom: 60px; }
-    .search-content-area .search-site-main h1 {
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 2.4rem;
-      padding-bottom: 20px;
-      margin-bottom: 60px;
-      margin-top: 0;
-      border-bottom: 1px solid #e1e1e1; }
-    .search-content-area .search-site-main h2 a {
-      line-height: 1.25;
-      text-decoration: none;
-      color: #248a83; }
-    .search-content-area .search-site-main .search-entry-summary a {
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 0.9rem;
-      padding: 15px 30px;
-      background-color: white;
-      border: 1px black solid;
-      text-decoration: none; }
-    .search-content-area .search-site-main p {
-      margin-bottom: 30px; }
-
-/** 
- * Archives
- */
-.archive-content-area {
-  width: 75%;
-  max-width: 760px;
-  margin-right: 5%;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  .archive-content-area h1 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.4rem;
-    padding-bottom: 20px;
-    margin-bottom: 60px;
-    margin-top: 0;
-    border-bottom: 1px solid #e1e1e1; }
-
-/** 
- * Product Archive
- */
-.product-site-main {
-  width: 100%; }
-  .product-site-main h1 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.4rem;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    line-height: 1.25; }
-  .product-site-main ul {
-    text-align: center;
-    padding-bottom: 40px;
-    margin-top: 30px; }
-    .product-site-main ul li {
-      display: inline; }
-    .product-site-main ul a {
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 1.2rem;
-      text-decoration: none;
-      font-weight: 200;
-      margin: 25px; }
-      .product-site-main ul a:visited {
-        color: #248a83; }
-      .product-site-main ul a:hover {
-        color: black; }
-
-.product-content-area {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .product-content-area .products-grid-container {
-    border-top: 1px #aaa dashed;
-    padding-top: 60px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.25rem;
-    margin-bottom: 1.5rem; }
-  .product-content-area .product-grid-item {
-    border: 1px solid #e1e1e1; }
-  .product-content-area .product-thumbnail-container {
-    height: 250px; }
-    .product-content-area .product-thumbnail-container img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      overflow: hidden; }
-  .product-content-area .product-entry-content {
-    padding: 15px 20px;
-    font-size: 0.9rem; }
-
-/** 
- * Product Single
- */
-.product-single-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 90px; }
-  .product-single-item .product-single-image {
-    width: 45%; }
-  .product-single-item .product-single-content {
-    width: 45%; }
-    .product-single-item .product-single-content h1 {
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      color: #d99054;
-      font-size: 2.4rem;
-      margin-top: 0;
-      margin-bottom: 10px;
-      line-height: 1.25; }
-    .product-single-item .product-single-content .product-single-price {
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 1.8rem;
-      margin-top: 0; }
-  .product-single-item .social-buttons {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-    .product-single-item .social-buttons .black-btn {
-      padding: 15px 30px;
-      background-color: white;
-      border: 1px black solid;
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 0.9rem; }
-    .product-single-item .social-buttons .fab {
-      font-size: 0.9rem; }
-
-/** 
- * Taxonomy
- */
-.tax-grid-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.25rem;
-  padding-top: 60px;
-  border-top: 1px #aaa dashed; }
-  .tax-grid-container .tax-thumbnail-container {
-    height: 250px; }
-    .tax-grid-container .tax-thumbnail-container img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      overflow: hidden; }
-  .tax-grid-container .tax-entry-content {
-    padding: 15px 20px;
-    font-size: 0.9rem; }
-  .tax-grid-container .tax-grid-item {
-    border: 1px solid #e1e1e1; }
-
-.tax-site-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .tax-site-main h1 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.4rem;
-    text-align: center;
-    margin-top: 0; }
-  .tax-site-main p {
-    text-align: center;
-    margin: auto;
-    padding-bottom: 60px;
-    max-width: 800px; }
-
-/** 
- * Adventure Single Page
- */
-.adventure-page-container {
-  width: 100%;
-  padding: 0 0 60px 0; }
-  .adventure-page-container .adventure-header-image img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100vh;
-    width: 100%; }
-  .adventure-page-container h1 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.4rem;
-    text-align: left;
-    margin: 3rem auto 0 auto;
-    line-height: 1.25;
-    letter-spacing: 2px;
-    width: 800px; }
-  .adventure-page-container .author {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    color: "inherit";
-    font-size: 1.25rem;
-    margin-bottom: 1rem; }
-  .adventure-page-container p {
-    width: 800px;
-    margin: auto;
-    margin-bottom: 30px; }
-  .adventure-page-container .social-buttons {
-    width: 800px;
-    margin: 30px auto; }
-    .adventure-page-container .social-buttons .black-btn {
-      padding: 15px 30px;
-      background-color: white;
-      border: 1px black solid;
-      text-transform: uppercase;
-      font-family: "Novecento Sans Wide", sans-serif;
-      font-size: 0.9rem; }

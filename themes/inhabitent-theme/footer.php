@@ -45,7 +45,7 @@
         <div class="footer-block-item">
             <div class="text-logo">
                 <a href="<?php echo home_url(); ?>"><img alt="Inhabitent text logo"
-                                                         src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg"></a>
+                                                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg"></a>
             </div>
         </div>
     </div>

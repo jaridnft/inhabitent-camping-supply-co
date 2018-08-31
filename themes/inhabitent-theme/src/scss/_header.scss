@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.logged-in {
+  .site-header {
+    margin-top: 35px;
+  }
+}
 
 .site-header {
   z-index: 999;
@@ -27,11 +32,11 @@
   justify-content: flex-start;
   width: 10%;
   .img-div {
-    background-image: url(../../images/logos/inhabitent-logo-tent.svg);
+    background-image: url(../../assets/images/logos/inhabitent-logo-tent.svg);
     background-size: cover;
     padding: 16px 25px;
     &.top {
-      background-image: url(../../images/logos/inhabitent-logo-tent-white.svg);
+      background-image: url(../../assets/images/logos/inhabitent-logo-tent-white.svg);
     }
   }
 }

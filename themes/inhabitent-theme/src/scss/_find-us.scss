@@ -1,0 +1,68 @@
+/** 
+ * Find Us Page (general page.php settings)
+ */
+
+.post-2 {
+  max-width: 760px;
+  padding-right: 8%;
+  padding-top: 60px;
+  h1 {
+    letter-spacing: 2px;
+  }
+  h2 {
+    @include header-font(2.1rem, null);
+    text-align: start;
+    line-height: 1.25;
+    letter-spacing: 2px;
+  }
+  p {
+    margin: 0;
+    max-width: 700px;
+  }
+}
+
+.site-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .content-area {
+    padding-bottom: 60px;
+  }
+}
+
+.entry-title {
+  @include header-font(2.4rem, null);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.wpcf7-form {
+  p {
+    @include header-font(null, null);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    label {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .asterisk {
+      color: $color_brand_orange;
+    }
+    .wpcf7-textarea {
+      height: 350px;
+      max-width: 700px;
+    }
+  }
+
+  .wpcf7-submit {
+    @include submit-green-button();
+  }
+}
+
+.wpcf7-form-control {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  height: 49px;
+  margin-top: 10px;
+}
