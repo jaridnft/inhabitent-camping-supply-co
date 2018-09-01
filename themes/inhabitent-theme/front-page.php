@@ -69,6 +69,54 @@ get_header(); ?>
 		<?php endforeach; ?>
     </div> <!-- end of front-page-journal-container -->
 
+    <h2>Adventures</h2>
+    <div class="front-page-adventure-container">
+    <div class="adventure-grid-container">
+		<?php
+		$adventure_args = array(
+			'posts_per_page' => 4,
+			'post_type'      => 'adventure'
+		);
+
+		$adventure_posts = get_posts( $adventure_args );
+		?>
+
+
+		<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+
+
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+				<?php if ( has_post_thumbnail() ) : ?>
+
+
+					<?php the_post_thumbnail( 'large' ); ?>
+
+
+				<?php endif; ?>
+
+
+				<?php if ( 'adventure' === get_post_type() ) : ?>
+
+					<?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' );
+					echo '<div class="adventure-read-more-container"><a href="' . esc_url( get_permalink() ) . '">Read more &rarr;</i></a></div>';
+					?>
+
+
+				<?php endif; ?>
+
+
+            </article><!-- #post-## -->
+
+
+		<?php endforeach; ?>
+
+
+	</div><!-- end of adventure-grid-container -->
+	<a class="more-adventures" href=#>More Adventures</a>
+    </div> <!-- end of front-page-adventure-container -->
+
 </div>
 
 <?php get_footer(); ?>

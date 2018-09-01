@@ -7,14 +7,14 @@ let gulp = require('gulp'),
   babel = require('gulp-babel'),
   autoPrefixer = require('gulp-autoprefixer'),
   cssNano = require('gulp-cssnano'),
-  prettyError = require('gulp-prettyerror'),
-  imageOp = require('gulp-image-optimization');
+  imageMin = require('gulp-imagemin'),
+  prettyError = require('gulp-prettyerror');
 
 const basePath = 'themes/inhabitent-theme/';
 
 gulp.task('sass', () => {
   return gulp
-    .src(basePath + 'src/scss/style.scss')
+    .src(`${basePath}src/scss/style.scss`)
     .pipe(prettyError())
     .pipe(sass())
     .pipe(
@@ -22,16 +22,16 @@ gulp.task('sass', () => {
         browsers: ['last 2 versions']
       })
     )
-    .pipe(gulp.dest(basePath + 'build/css/'))
+    .pipe(gulp.dest(`${basePath}build/css/`))
     .pipe(cssNano())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest(basePath + 'build/css'));
+    .pipe(gulp.dest(`${basePath}build/css`));
 });
 
 gulp.task('lint', () => {
   return (
     gulp
-      .src(basePath + 'src/js/*.js')
+      .src(`${basePath}src/js/*.js`)
       // eslint() attaches the lint output to the "eslint" property
       // of the file object so it can be used by other modules.
       .pipe(eslint())
@@ -48,7 +48,7 @@ gulp.task(
   'scripts',
   gulp.series('lint', () => {
     return gulp
-      .src(basePath + 'src/js/*.js') // these are the files gulp will consume
+      .src(`${basePath}src/js/*.js`) // these are the files gulp will consume
       .pipe(babel()) // transcompile ES6 to ES5
       .pipe(uglify()) // call uglify function on these files
       .pipe(
@@ -56,22 +56,37 @@ gulp.task(
           extname: '.min.js'
         })
       ) // change file extension after uglified
-      .pipe(gulp.dest(basePath + 'build/js')); // send built files to ./build/js/
+      .pipe(gulp.dest(`${basePath}build/js`)); // send built files to ./build/js/
   })
 );
 
+gulp.task('images', () => {
+  return gulp
+    .src(`${basePath}assets/images/**/*.{png,jpg,jpeg,svg}`)
+    .pipe(
+      imageMin([
+        imageMin.jpegtran({ progressive: true }),
+        imageMin.optipng({ optimizationLevel: 5 }),
+        imageMin.svgo({
+          plugins: [{ removeViewBox: true }, { cleanupIDs: false }]
+        })
+      ])
+    )
+    .pipe(gulp.dest(`${basePath}build/images`));
+});
+
 gulp.task('watch', () => {
   // pass in files that need to be uglified
-  gulp.watch(basePath + 'src/js/*.js', gulp.series('scripts'));
-  gulp.watch(basePath + 'src/scss/*.scss', gulp.series('sass'));
+  gulp.watch(`${basePath}src/js/*.js`, gulp.series('scripts'));
+  gulp.watch(`${basePath}src/scss/*.scss`, gulp.series('sass'));
 });
 
 gulp.task('browser-sync', function() {
   const files = [
-    './build/css/*.css',
-    './build/js/*.js',
-    './*.php',
-    './**/*.php'
+    `${basePath}build/css/*.css`,
+    `${basePath}build/js/*.js`,
+    `${basePath}*.php`,
+    `${basePath}**/*.php`
   ];
 
   browserSync.init(files, {

@@ -10,10 +10,10 @@ This was my first attempt at building a completely custom WordPress theme. This 
 
 ## Technology
 
-- WordPress / PHP
 - JavaScript ES6 / jQuery
-- HTML5 / CSS3
+- WordPress / PHP
 - NPM / Gulp
+- HTML5 / CSS3
 
 ## Setup
 
