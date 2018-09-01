@@ -124,5 +124,8 @@
     text-shadow: 1px 1px black;
     color: white;
     font-weight: 300;
+    &:hover {
+      color: $color_brand_yellow;
+    }
   }
 }
