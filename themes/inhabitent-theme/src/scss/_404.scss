@@ -1,0 +1,46 @@
+/* 
+  * 404 Page
+  */
+
+.site-content {
+  margin-top: 55px;
+  &.top {
+    margin-top: 0;
+  }
+}
+
+.site-main-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .error-404 {
+    padding: 60px 5% 60px 0;
+    max-width: 800px;
+    p {
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+  }
+  h1 {
+    @include header-font(2.4rem, null);
+    line-height: 1.25;
+  }
+  h2 {
+    @include header-font(null, null);
+  }
+  .search-submit {
+    display: none;
+  }
+  .search-field {
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    padding: 6px;
+  }
+  .search-form {
+    padding-bottom: 15px;
+  }
+}
+
+.widget_archive p {
+  padding: 0;
+}

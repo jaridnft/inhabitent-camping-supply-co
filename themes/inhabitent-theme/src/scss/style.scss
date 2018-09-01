@@ -49,30 +49,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import 'variables';
 @import 'mixins';
+@import 'fonts';
 
-// CSS included in style.css.
+// Normalize environment before styling
 
 @import 'normalize';
-@import 'fonts';
+
+// Starter styles
+
+@import 'media';
 @import 'typography';
 @import 'elements';
 @import 'forms';
 @import 'navigation';
 @import 'modules';
-@import 'widgets';
 @import 'content';
-@import 'media';
+
+// Page styles
+
+@import 'widgets';
 @import 'header';
 @import 'footer';
 @import 'sidebar';
-@import 'pages';
+@import 'search';
+@import '404';
 @import 'adventure-single';
 @import 'adventure-archive';
 @import 'product-single';
 @import 'product-archive';
-@import 'journal-single';
-@import 'journal-archive';
+@import 'single';
+@import 'archive';
+@import 'page-about';
 @import 'taxonomy';
-@import 'find-us';
+@import 'page'; // this is default page that is styled for "Find-Us Page"
 @import 'front-page';
 @import 'comments';

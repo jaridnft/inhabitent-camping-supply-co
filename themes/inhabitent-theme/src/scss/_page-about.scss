@@ -1,0 +1,27 @@
+/* 
+* About Page
+*/
+
+.about-content-area {
+  width: 100%;
+  .hero-image-header {
+    height: 100vh;
+  }
+  .entry-content {
+    margin-top: 0;
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  h2 {
+    @include header-font(2.1rem, null);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+}

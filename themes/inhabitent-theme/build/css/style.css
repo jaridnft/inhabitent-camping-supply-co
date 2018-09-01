@@ -46,6 +46,51 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*
 * HIGH PPI DISPLAY BACKGROUNDS
 */
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/Merriweather-LightItalic.eot");
+  src: url("../../assets/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/Merriweather-Light.eot");
+  src: url("../../assets/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Light.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Light.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/Merriweather-Bold.eot");
+  src: url("../../assets/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Bold.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Wide';
+  src: url("../../assets/fonts/Novecentosanswide-Normal.eot");
+  src: url("../../assets/fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-Normal.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-Normal.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Wide';
+  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot");
+  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-DemiBold.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/Merriweather-BoldItalic.eot");
+  src: url("../../assets/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -226,49 +271,64 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
+# Media
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-LightItalic.eot");
-  src: url("../../assets/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
-  font-weight: 300;
-  font-style: italic; }
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
 
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-Light.eot");
-  src: url("../../assets/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Light.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Light.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
 
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-Bold.eot");
-  src: url("../../assets/fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Bold.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
+/* Captions */
+.wp-caption {
+  margin-bottom: 1.5rem;
+  max-width: 100%; }
+  .wp-caption img[class*='wp-image-'] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075rem 0; }
 
-@font-face {
-  font-family: 'Novecento Sans Wide';
-  src: url("../../assets/fonts/Novecentosanswide-Normal.eot");
-  src: url("../../assets/fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-Normal.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-Normal.svg#.") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+.wp-caption-text {
+  text-align: center; }
 
-@font-face {
-  font-family: 'Novecento Sans Wide';
-  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot");
-  src: url("../../assets/fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-DemiBold.svg#.") format("svg");
-  font-weight: bold;
-  font-style: normal; }
+/* Galleries*/
+.gallery {
+  margin-bottom: 1.5rem; }
 
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-BoldItalic.eot");
-  src: url("../../assets/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -611,19 +671,6 @@ a {
   display: table; }
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
@@ -662,64 +709,17 @@ a {
   display: block; }
 
 /*--------------------------------------------------------------
-# Media
+# Widgets
 --------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
+.widget {
+  margin: 0 0 1.5rem;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
 
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5rem;
-  max-width: 100%; }
-  .wp-caption img[class*='wp-image-'] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075rem 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5rem; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Header
@@ -942,32 +942,6 @@ object {
     color: black; }
   .widget-area .business-hours {
     color: black; }
-
-/*--------------------------------------------------------------
-# Container file for remaining pages
---------------------------------------------------------------*/
-/* 
-* About Page
-*/
-.about-content-area {
-  width: 100%; }
-  .about-content-area .hero-image-header {
-    height: 100vh; }
-  .about-content-area .entry-content {
-    margin-top: 0; }
-  .about-content-area h1 {
-    color: white;
-    font-size: 3rem; }
-  .about-content-area h2 {
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    font-size: 2.1rem;
-    text-align: center;
-    letter-spacing: 2px; }
-  .about-content-area p {
-    width: 800px;
-    margin: auto;
-    padding-bottom: 30px; }
 
 /** 
  * Search
@@ -1205,7 +1179,7 @@ object {
     font-size: 0.9rem; }
 
 /** 
- * Journal (main blog settings) & single page 
+ * Journal (main blog settings) single page 
  */
 .journal-content-area,
 .single-content-area {
@@ -1318,6 +1292,29 @@ object {
     margin-bottom: 60px;
     margin-top: 0;
     border-bottom: 1px solid #e1e1e1; }
+
+/* 
+* About Page
+*/
+.about-content-area {
+  width: 100%; }
+  .about-content-area .hero-image-header {
+    height: 100vh; }
+  .about-content-area .entry-content {
+    margin-top: 0; }
+  .about-content-area h1 {
+    color: white;
+    font-size: 3rem; }
+  .about-content-area h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+    letter-spacing: 2px; }
+  .about-content-area p {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 30px; }
 
 /** 
  * Taxonomy
