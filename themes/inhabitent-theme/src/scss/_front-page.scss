@@ -9,7 +9,7 @@
     @include header-font(2.4rem, null);
     font-weight: 200;
     text-align: center;
-    margin-bottom: 0;
+    padding-top: 40px;
   }
   .front-page-hero {
     height: 100vh;
@@ -22,82 +22,90 @@
     align-items: center;
     justify-content: center;
   }
-  .front-page-journal-container {
-    @include front-page-container();
-    article {
-      position: relative;
-      margin: 1%;
-      width: 365px;
-      border: 1px solid #e1e1e1;
-    }
-    img {
-      height: 250px;
-      object-fit: cover;
-      overflow: hidden;
-    }
-  }
-  .front-page-entry-meta {
-    padding: 15px;
-    height: 230px;
-    p {
-      font-size: 0.75rem;
-      margin: 0;
-    }
-    h3 {
-      @include header-font(1.3rem, null);
-      line-height: 1.25;
-      letter-spacing: 2px;
-      margin-top: 0;
-      margin-bottom: 30px;
-      a {
-        text-decoration: none;
-        @include hyperlinks();
-      }
-    }
-  }
-  .journal-read-more-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 0.75rem;
-    a {
-      @include read-more();
-      @include hyperlinks();
-    }
-  }
 }
 .front-page-shop-container {
   @include front-page-container();
   display: flex;
   justify-content: center;
+  .front-page-shop-item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    border-top: 4px solid #e1e1e1;
+    padding: 1%;
+    margin: 1%;
+    @include fix-end-margins(4);
+    &:hover {
+      border-color: $color_brand_orange;
+    }
+    img {
+      margin: auto;
+      height: 70px;
+      width: 70px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    a {
+      @include submit-green-button(10px);
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
 }
-.front-page-shop-item {
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border: 1px solid #e1e1e1;
-  border-top: 4px solid #e1e1e1;
-  padding: 1%;
-  margin: 1%;
-  &:hover {
-    border-color: $color_brand_orange;
+.front-page-journal-container {
+  @include front-page-container();
+  article {
+    position: relative;
+    margin: 1%;
+    border: 1px solid #e1e1e1;
+    @include fix-end-margins(3);
   }
   img {
-    margin: auto;
-    height: 70px;
-    width: 70px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
   }
+}
+.front-page-entry-meta {
+  padding: 15px;
+  height: 230px;
   p {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 0.75rem;
+    margin: 0;
   }
+  h3 {
+    @include header-font(1.3rem, null);
+    line-height: 1.25;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    a {
+      text-decoration: none;
+      @include hyperlinks();
+    }
+  }
+}
+.journal-read-more-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.75rem;
   a {
-    @include submit-green-button(10px);
+    @include read-more(black);
+  }
+}
+.front-page-adventure-container {
+  width: 1190px;
+  padding: 30px 0 80px 0;
+  margin: auto;
+  a.more-adventures {
+    @include submit-green-button();
     text-decoration: none;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
   }
 }
 .adventure-grid-container {
@@ -105,53 +113,49 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px 20px;
-
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
   .type-adventure {
     position: relative;
     margin-bottom: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .adventure-read-more-container {
+      position: absolute;
+      bottom: 30px;
+      right: 18px;
+      a {
+        @include read-more(white);
+      }
+    }
     &:first-of-type {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
       height: 550px;
+      h3 {
+        @include adventure-header(60px);
+      }
     }
     &:nth-of-type(2) {
       grid-column: 3 / span 2;
       grid-row: 1 / span 1;
       height: 265px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-      }
       h3 {
         @include adventure-header(52px);
-      }
-      .adventure-read-more-container {
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
-        a {
-          @include adventure-read-more();
-        }
       }
     }
     &:nth-of-type(3),
     &:nth-of-type(4) {
       height: 265px;
+      h3 {
+        @include adventure-header(35px);
+      }
     }
-  }
-}
-.front-page-adventure-container {
-  width: 1190px;
-  padding: 60px 0;
-  margin: 0 auto;
-  a.more-adventures {
-    @include submit-green-button();
-    text-decoration: none;
   }
 }

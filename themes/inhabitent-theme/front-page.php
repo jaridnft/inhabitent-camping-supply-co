@@ -69,7 +69,7 @@ get_header(); ?>
 		<?php endforeach; ?>
     </div> <!-- end of front-page-journal-container -->
 
-    <h2>Adventures</h2>
+    <h2>Latest Adventures</h2>
     <div class="front-page-adventure-container">
     <div class="adventure-grid-container">
 		<?php

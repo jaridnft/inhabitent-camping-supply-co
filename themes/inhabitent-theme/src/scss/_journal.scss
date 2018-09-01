@@ -5,9 +5,7 @@
 .journal-content-area,
 .single-content-area {
   max-width: 760px;
-  padding-right: 5%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 5% 60px 0;
   article {
     padding-bottom: 60px;
   }
@@ -57,7 +55,7 @@
     margin-bottom: 30px;
   }
   a {
-    @include read-more();
+    @include read-more(black);
   }
 }
 
