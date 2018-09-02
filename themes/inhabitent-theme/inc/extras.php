@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package red_academy_theme
+ * @package inhabitent_theme
  */
 
 /**
