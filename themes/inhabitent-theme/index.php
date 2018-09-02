@@ -1,6 +1,8 @@
 <?php
 /**
- * The main template file.
+ * The main template file
+ * 
+ * Template Name: Index
  *
  * @package Inhabitent_Theme
  */

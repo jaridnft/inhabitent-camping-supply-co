@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying the front-page.
+ * The template for displaying the front-page
+ * 
+ * Template Name: Front-Page
  *
  * @package Inhabitent_Theme
  */

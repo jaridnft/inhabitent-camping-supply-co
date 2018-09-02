@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying comments.
+ * The template for displaying comments
+ * 
+ * Template Name: Comments
  *
  * @package Inhabitent_Theme
  */

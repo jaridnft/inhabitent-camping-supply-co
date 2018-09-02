@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "inhabitent-theme",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A starter theme for Inhabitent Camping Supply, based on Underscores.",
   "main": "gulpfile.js",
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/jaridwarren/inhabitent-camping-supply-co.git"
   },
-  "author": "mandiwise",
+  "author": "Jarid Warren <jaridwarren@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/jaridwarren/inhabitent-camping-supply-co/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/jaridwarren/inhabitent-camping-supply-co#readme"
 }

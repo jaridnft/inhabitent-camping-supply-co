@@ -1,6 +1,8 @@
 <?php
 /**
- * The sidebar containing the main widget area.s
+ * The sidebar containing the main widget area
+ * 
+ * Template Name: Sidebar
  *
  * @package Inhabitent_Theme
  */

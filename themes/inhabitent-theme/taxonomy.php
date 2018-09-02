@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying custom taxonomy.
+ * The template for displaying custom taxonomy
+ * 
+ * Template Name: Taxonomy
  *
  * @package Inhabitent_Theme
  */

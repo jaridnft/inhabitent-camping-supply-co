@@ -1,4 +1,11 @@
 <?php
+/**
+ * The sidebar containing the main widget area
+ * 
+ * Template Name: Single-Adventure
+ *
+ * @package Inhabitent_Theme
+ */
 
 // @TODO: fix work around, couldn't enqueue script inside functions.php successfully
 wp_enqueue_script( 'hero-header', get_template_directory_uri() . '/build/js/hero-header.min.js', array( 'jquery' ), '1.0.0', true );

@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The template for displaying search results pages
+ * 
+ * Template Name: Search
  *
  * @package Inhabitent_Theme
  */

@@ -51,5 +51,6 @@ This was my first attempt at building a completely custom WordPress theme. This 
 ## @TODO
 
 - Widget-ize footer
+- Parameterize custom post-type definitions in `plugins/inhabitent-functionality/lib/functions/post-types.php`
 - Validate HTML on all pages (only did front-page.php)
 - Make entire website mobile responsive (desktop only at the moment)

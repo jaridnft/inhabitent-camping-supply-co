@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying product list (shop tab).
+ * The template for displaying product list (shop tab)
+ * 
+ * Template Name: Archive-Products
  *
  * @package Inhabitent_Theme
  */

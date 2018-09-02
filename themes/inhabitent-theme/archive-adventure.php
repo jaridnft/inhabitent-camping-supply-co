@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying adventure list.
+ * The template for displaying adventure list
+ * 
+ * Template Name: Archive-Adventures
  *
  * @package Inhabitent_Theme
  */

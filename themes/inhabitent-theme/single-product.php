@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying single product pages.
+ * The template for displaying single product pages
+ * 
+ * Template Name: Product-Page
  *
  * @package Inhabitent_Theme
  */

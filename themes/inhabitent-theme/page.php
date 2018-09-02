@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying all pages
+ * 
+ * Template Name: Default-Page
  *
  * @package Inhabitent_Theme
  */

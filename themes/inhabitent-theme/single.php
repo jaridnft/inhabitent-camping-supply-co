@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single journal posts
+ * 
+ * Template Name: Single-View
  *
  * @package Inhabitent_Theme
  */

@@ -1,6 +1,8 @@
 <?php
 /**
- * The header for our theme.
+ * The header for the Inhabitent theme
+ * 
+ * Template Name: Header
  *
  * @package Inhabitent_Theme
  */

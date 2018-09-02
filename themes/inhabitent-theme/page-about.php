@@ -1,9 +1,11 @@
 <?php
-/*
-* Template Name: About Page
-*
-* @package Inhabitent_Theme
-*/
+/**
+ * The template for displaying the about page
+ *
+ * Template Name: About-Page
+ *
+ * @package Inhabitent_Theme
+ */
 
 get_header(); ?>
 
