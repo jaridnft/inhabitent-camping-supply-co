@@ -30,7 +30,8 @@ add_filter('body_class', 'inhabitent_body_classes');
 function inhabitent_login_logo()
 {
     echo '<style type="text/css">                                                                   
-	body.login div#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/assets/images/logos/inhabitent-logo-text-dark.svg) !important; 
+	body.login div#login h1 a { 
+		background-image:url('.get_stylesheet_directory_uri().'/assets/images/logos/inhabitent-logo-text-dark.svg) !important; 
 		background-size: 300px 53px !important;
 		width: 320px;
 		margin: 0;
