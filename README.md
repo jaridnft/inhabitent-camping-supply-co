@@ -1,4 +1,4 @@
-# 'Inhabitent Camping Supply Co.' powered by WordPress.
+# 'Inhabitent Camping Supply Co.' powered by WordPress
 
 #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
 
