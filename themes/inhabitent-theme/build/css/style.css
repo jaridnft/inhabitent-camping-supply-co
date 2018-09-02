@@ -1072,6 +1072,73 @@ a {
 /** 
  * Adventure Archive
  */
+.adventure-content-area {
+  width: 1190px;
+  padding: 30px 0 80px 0;
+  margin: auto; }
+  .adventure-content-area h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 2px; }
+  .adventure-content-area .adventure-archive-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 30px;
+    height: 1240px;
+    width: 1120px;
+    margin: auto;
+    padding: 60px 0;
+    border-top: 1px #aaa dashed; }
+    .adventure-content-area .adventure-archive-grid-container article {
+      height: 545px;
+      width: 545px;
+      position: relative;
+      margin-bottom: 0; }
+    .adventure-content-area .adventure-archive-grid-container h2 {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      margin: 55px auto 20px auto;
+      width: 90%;
+      font-size: 60px;
+      line-height: 1.25; }
+      .adventure-content-area .adventure-archive-grid-container h2 a {
+        text-decoration: none;
+        text-shadow: 1px 1px black;
+        color: white;
+        font-weight: 300; }
+        .adventure-content-area .adventure-archive-grid-container h2 a:hover {
+          color: #f0e4d1; }
+    .adventure-content-area .adventure-archive-grid-container img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      -webkit-filter: brightness(70%);
+              filter: brightness(70%); }
+    .adventure-content-area .adventure-archive-grid-container .adventure-read-more-container {
+      position: absolute;
+      bottom: 30px;
+      right: 18px; }
+      .adventure-content-area .adventure-archive-grid-container .adventure-read-more-container a {
+        text-transform: uppercase;
+        font-family: "Novecento Sans Wide", sans-serif;
+        text-decoration: none;
+        padding: 15px 30px;
+        border: 1px white solid;
+        color: white; }
+        .adventure-content-area .adventure-archive-grid-container .adventure-read-more-container a:hover {
+          background-color: #248a83;
+          border: 1px #248a83 solid;
+          color: white; }
+
 /** 
  * Product Single
  */
@@ -1502,7 +1569,7 @@ a {
     margin: 1%; }
     .front-page-shop-container .front-page-shop-item:first-of-type {
       margin-left: 0; }
-    .front-page-shop-container .front-page-shop-item:nth-of-type($n) {
+    .front-page-shop-container .front-page-shop-item:last-of-type {
       margin-right: 0; }
     .front-page-shop-container .front-page-shop-item:hover {
       border-color: #d99054; }
@@ -1550,13 +1617,14 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px auto 0 auto; }
-  .front-page-journal-container article {
+  .front-page-journal-container article.post {
     position: relative;
     margin: 1%;
+    width: 382px;
     border: 1px solid #e1e1e1; }
-    .front-page-journal-container article:first-of-type {
+    .front-page-journal-container article.post:first-of-type {
       margin-left: 0; }
-    .front-page-journal-container article:nth-of-type($n) {
+    .front-page-journal-container article.post:last-of-type {
       margin-right: 0; }
   .front-page-journal-container img {
     height: 250px;
@@ -1627,22 +1695,23 @@ a {
 
 .adventure-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 282.5px);
+  grid-template-rows: repeat(2, 282.5px);
   grid-gap: 20px 20px;
   margin: 0 0 40px 0; }
   .adventure-grid-container .type-adventure {
     position: relative;
     margin-bottom: 0; }
     .adventure-grid-container .type-adventure img {
-      width: 100%;
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       overflow: hidden;
       position: absolute;
       top: 0;
-      bottom: 0; }
+      left: 0;
+      -webkit-filter: brightness(70%);
+              filter: brightness(70%); }
     .adventure-grid-container .type-adventure .adventure-read-more-container {
       position: absolute;
       bottom: 30px;
@@ -1661,7 +1730,7 @@ a {
     .adventure-grid-container .type-adventure:first-of-type {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
-      height: 550px; }
+      width: 585px; }
       .adventure-grid-container .type-adventure:first-of-type h3 {
         position: absolute;
         top: 0;
@@ -1678,9 +1747,9 @@ a {
           .adventure-grid-container .type-adventure:first-of-type h3 a:hover {
             color: #f0e4d1; }
     .adventure-grid-container .type-adventure:nth-of-type(2) {
-      grid-column: 3 / span 2;
+      grid-column: 3 / span 4;
       grid-row: 1 / span 1;
-      height: 265px; }
+      width: 585px; }
       .adventure-grid-container .type-adventure:nth-of-type(2) h3 {
         position: absolute;
         top: 0;
@@ -1697,7 +1766,7 @@ a {
           .adventure-grid-container .type-adventure:nth-of-type(2) h3 a:hover {
             color: #f0e4d1; }
     .adventure-grid-container .type-adventure:nth-of-type(3), .adventure-grid-container .type-adventure:nth-of-type(4) {
-      height: 265px; }
+      width: 282.5px; }
       .adventure-grid-container .type-adventure:nth-of-type(3) h3, .adventure-grid-container .type-adventure:nth-of-type(4) h3 {
         position: absolute;
         top: 0;

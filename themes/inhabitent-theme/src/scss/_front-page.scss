@@ -35,7 +35,7 @@
     border-top: 4px solid #e1e1e1;
     padding: 1%;
     margin: 1%;
-    @include fix-end-margins(4);
+    @include fix-end-margins();
     &:hover {
       border-color: $color_brand_orange;
     }
@@ -60,11 +60,12 @@
 }
 .front-page-journal-container {
   @include front-page-container();
-  article {
+  article.post {
     position: relative;
     margin: 1%;
+    width: 382px;
     border: 1px solid #e1e1e1;
-    @include fix-end-margins(3);
+    @include fix-end-margins();
   }
   img {
     height: 250px;
@@ -110,21 +111,21 @@
 }
 .adventure-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 282.5px);
+  grid-template-rows: repeat(2, 282.5px);
   grid-gap: 20px 20px;
   margin: 0 0 40px 0;
   .type-adventure {
     position: relative;
     margin-bottom: 0;
     img {
-      width: 100%;
       height: 100%;
       object-fit: cover;
       overflow: hidden;
       position: absolute;
       top: 0;
-      bottom: 0;
+      left: 0;
+      filter: brightness(70%);
     }
     .adventure-read-more-container {
       position: absolute;
@@ -137,22 +138,22 @@
     &:first-of-type {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
-      height: 550px;
+      width: 585px;
       h3 {
         @include adventure-header(60px);
       }
     }
     &:nth-of-type(2) {
-      grid-column: 3 / span 2;
+      grid-column: 3 / span 4;
       grid-row: 1 / span 1;
-      height: 265px;
+      width: 585px;
       h3 {
         @include adventure-header(52px);
       }
     }
     &:nth-of-type(3),
     &:nth-of-type(4) {
-      height: 265px;
+      width: 282.5px;
       h3 {
         @include adventure-header(35px);
       }

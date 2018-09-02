@@ -93,11 +93,11 @@
   margin: 50px auto 0 auto;
 }
 
-@mixin fix-end-margins($n) {
+@mixin fix-end-margins() {
   &:first-of-type {
     margin-left: 0;
   }
-  &:nth-of-type($n) {
+  &:last-of-type {
     margin-right: 0;
   }
 }

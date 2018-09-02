@@ -71,50 +71,51 @@ get_header(); ?>
 
     <h2>Latest Adventures</h2>
     <div class="front-page-adventure-container">
-    <div class="adventure-grid-container">
-		<?php
-		$adventure_args = array(
-			'posts_per_page' => 4,
-			'post_type'      => 'adventure'
-		);
+        <div class="adventure-grid-container">
+			<?php
+			$adventure_args = array(
+				'posts_per_page' => 4,
+				'post_type'      => 'adventure',
+				'order'          => 'ASC'
+			);
 
-		$adventure_posts = get_posts( $adventure_args );
-		?>
-
-
-		<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+			$adventure_posts = get_posts( $adventure_args );
+			?>
 
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
 
 
-				<?php if ( has_post_thumbnail() ) : ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-					<?php the_post_thumbnail( 'large' ); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
 
 
-				<?php endif; ?>
+						<?php the_post_thumbnail( 'large' ); ?>
 
 
-				<?php if ( 'adventure' === get_post_type() ) : ?>
-
-					<?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' );
-					echo '<div class="adventure-read-more-container"><a href="' . esc_url( get_permalink() ) . '">Read more &rarr;</i></a></div>';
-					?>
+					<?php endif; ?>
 
 
-				<?php endif; ?>
+					<?php if ( 'adventure' === get_post_type() ) : ?>
+
+						<?php the_title( sprintf( '<h3 class="front-page-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' );
+						echo '<div class="adventure-read-more-container"><a href="' . esc_url( get_permalink() ) . '">Read more &rarr;</i></a></div>';
+						?>
 
 
-            </article><!-- #post-## -->
+					<?php endif; ?>
 
 
-		<?php endforeach; ?>
+                </article><!-- #post-## -->
 
 
-	</div><!-- end of adventure-grid-container -->
-	<a class="more-adventures" href=#>More Adventures</a>
+			<?php endforeach; ?>
+
+
+        </div><!-- end of adventure-grid-container -->
+        <a class="more-adventures" href=#>More Adventures</a>
     </div> <!-- end of front-page-adventure-container -->
 
 </div>
