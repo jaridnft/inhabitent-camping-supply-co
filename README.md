@@ -2,11 +2,13 @@
 
 #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
 
+Custom WordPress theme for the fictional 'Inhabitent Camping Supply Co." complete with search, custom post types, archives, single post views, contact form and widgetized sidebar. This website is a fixed-width desktop version.
+
+<img src="/themes/inhabitent-theme/assets/images/home-demo.gif" width="425"><img src="/themes/inhabitent-theme/assets/images/grid-demo.gif" width="425">
+
 ## Motivation
 
-This was my first attempt at building a completely custom WordPress theme. This site takes advantage of WordPress' built-in back-end capabilities to make a completely dynamic site using PHP and the WordPress template hierarchy.
-
-![alt-text](/themes/inhabitent-theme/assets/images/home-demo.gif 'Inhabitent Home Demo')![alt-text](/themes/inhabitent-theme/assets/images/grid-demo.gif 'Inhabitent CSS Grid Demo')
+This was my first attempt at building a completely custom WordPress theme. This site takes advantage of WordPress' built-in back-end capabilities to make a completely dynamic site using PHP and the WordPress template hierarchy. In addition, the front page and 'Shop' page were used to practice CSS grid.
 
 ## Technology
 
