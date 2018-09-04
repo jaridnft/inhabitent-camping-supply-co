@@ -2,7 +2,7 @@
 
 #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
 
-Custom WordPress theme for the fictional 'Inhabitent Camping Supply Co." complete with search, custom post types & taxonomy , archives, single post views, contact form and widgetized sidebar. This website is a fixed-width desktop version.
+Custom WordPress theme for 'Inhabitent Camping Supply Co." complete with search, custom post types & taxonomy , archives, single post views, contact form and widgetized sidebar. This website is a fixed-width desktop version.
 
 <img src="./themes/inhabitent-theme/assets/images/readme-images/home-demo.gif" width="425"><img src="./themes/inhabitent-theme/assets/images/readme-images/grid-demo.gif" width="425">
 
