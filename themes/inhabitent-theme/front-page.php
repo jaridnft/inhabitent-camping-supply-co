@@ -117,7 +117,7 @@ get_header(); ?>
 
 
         </div><!-- end of adventure-grid-container -->
-        <a class="more-adventures" href=#>More Adventures</a>
+        <a class="more-adventures" href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a>
     </div> <!-- end of front-page-adventure-container -->
 
 </div>
