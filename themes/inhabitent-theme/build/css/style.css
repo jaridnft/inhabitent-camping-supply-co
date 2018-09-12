@@ -1038,7 +1038,9 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100vh;
-    width: 100%; }
+    width: 100%;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%); }
   .adventure-page-container h1 {
     text-transform: uppercase;
     font-family: "Novecento Sans Wide", sans-serif;
