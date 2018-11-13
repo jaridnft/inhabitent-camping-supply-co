@@ -167,11 +167,3 @@ add_action( 'init', 'inhabitent_register_product_type', 0 );
 **Watch changes to Sass/JS and automatically run scripts/sass:**
 
 `> gulp watch` or `gulp`
-
-## @TODO
-
-- Widget-ize footer
-- Parameterize custom post-type definitions in `plugins/inhabitent-functionality/lib/functions/post-types.php`
-- Validate HTML on all pages (only did front-page.php)
-- Make entire website mobile responsive (desktop only at the moment)
-- Security: Escape PHP outputs & remove version number from backend
