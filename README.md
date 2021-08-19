@@ -1,6 +1,6 @@
 # 'Inhabitent Camping Supply Co.' powered by WordPress
 
-#### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
+#### Author: Jarid [ <jarid@hey.com> ]
 
 Custom WordPress theme for 'Inhabitent Camping Supply Co." complete with search, custom post types & taxonomy , archives, single post views, contact form and widgetized sidebar. This website is a fixed-width desktop version.
 
